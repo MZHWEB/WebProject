@@ -1,0 +1,51 @@
+body,ul{
+  padding: 0;
+  margin: 0;
+}
+a{
+  text-decoration: none;
+}
+a:link {color:#000000;}      /* 未访问链接*/
+a:visited {color:#000000;}  /* 已访问链接 */
+a:hover {color:#FF0000;}  /* 鼠标移动到链接上 */
+a:active {color:#FF0000;;}  /* 鼠标点击时 */
+.adminBox{
+  position: fixed;
+  left: 0;
+  top:50px;
+  bottom: 0;
+  width: 200px;
+  background-color: #303235;
+  ul{
+    padding-right: 5px;
+    li{
+      position: relative;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      border: 1px solid #505050;
+      border-left: 0;
+      border-right: 0;
+      border-radius: 4px;
+      margin-bottom: -1px;
+      &:hover,&.active{
+        background: -webkit-linear-gradient(#4b4b4b, #2d2f32); /* Safari 5.1 - 6.0 */
+        background: -o-linear-gradient(#4b4b4b, #2d2f32); /* Opera 11.1 - 12.0 */
+        background: -moz-linear-gradient(#4b4b4b, #2d2f32); /* Firefox 3.6 - 15 */
+        background: linear-gradient(#4b4b4b, #2d2f32); /* 标准的语法 */
+        a{
+          color: #f2534c;
+        }
+      }
+    }
+  }
+  b{
+    float: left;
+    height: 100%;
+    background-color: #f2534c;
+    padding: 0 2px;
+  }
+  a{
+    color: #fff;
+  }
+}

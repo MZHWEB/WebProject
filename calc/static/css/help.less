@@ -1,0 +1,86 @@
+#help-button{
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+  z-index: 3000;
+  img{
+    width: 40px;
+  }
+}
+#helpMune ul{
+  position: relative;
+  li{
+    font-size: 1.4em;
+    cursor: pointer;
+    &.active{
+      font-weight: 700;
+      color: darkorange;
+    }
+  }
+  li#munebg{
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 28px;
+    width: 100%;
+    background-color: #9d9d9d;
+    opacity: 0.3;
+    filter:alpha(opacity=30);
+    transition: 0.1s linear all;
+  }
+}
+#helpTxt{
+  border-left: 1px solid #e5e5e5;
+  max-height: 550px;
+  overflow: scroll;
+  h4 span{
+    color: darkorange;
+    margin-right: 10px;
+  }
+}
+#selectModal{
+  .modal-content{
+    background-color: #f1f1fe;
+    .modal-header{
+      background-color: #d6eff8;
+    }
+    .modal-body{
+      ul{
+        height: 400px;
+        overflow: auto;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #fff;
+        li{
+          padding: 4px 10px;
+          text-overflow : ellipsis;
+          overflow: hidden;
+          &:nth-of-type(odd){
+            background-color: #f9f9f9;
+          }
+          &:hover{
+            background-color: #d6eff8;
+          }
+          &.active{
+            background-color: #6ac5ff;
+          }
+        }
+      }
+      .btn-edit{
+        text-align: center;
+        padding: 50px 0;
+        div{
+          margin:30px 0;
+          line-height: 45px;
+          button{
+            width: 36px;
+          }
+        }
+      }
+      .text-center{
+        margin-top: 15px;
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.topheader {
+  background-color: #1389D3;
+  background-size: 100% 100%;
+}
+.topheader div.user {
+  border-color: #117bbe;
+}
+.topheader div.user:hover {
+  background-color: #117bbe;
+}
+.topmenu {
+  background-color: #6ac5ff;
+}
+.leftmenu {
+  background-color: #d6eff8;
+}
+div.leftmenu ul > li b,
+div.leftmenu ul > li:hover b {
+  background-color: #75d9ff;
+}
+.table-striped > tbody > tr.act {
+  background-color: #c1d7df;
+}
+.table-striped > tbody > tr:hover {
+  background-color: #d6eff8;
+}

@@ -1,0 +1,39 @@
+mysql修改utf-8
+一个是修改表的编码格式的
+
+ALTER TABLE `table` DEFAULT CHARACTER SET utf8;  
+但是虽然修改了表的编码格式，但是字段的编码格式并没有修改过来，没有什么卵用
+又发现一条语句，作用是修改字段的编码格式
+
+ALTER TABLE `tablename` CHANGE `字段名1` `字段名2` VARCHAR(36) CHARACTER SET utf8 NOT NULL;  
+但是一次只能修改一个字段，还是很麻烦，不方便。
+最后找到这么一条语句
+
+alter table `tablename` convert to character set utf8;  
+
+ubuntu 关闭端口  
+lsof -i:8888 //查看8888端口
+kill -9 PID 号 //关闭端口
+
+python manage.py makemigrations
+python manage.py migrate
+//创建管理员账号
+python manage.py createsuperuser
+//如果报错....for column 'object_repr' at row 1.就找到此列所在表为django_admin_log，然后插入：
+ 
+ 
+ALTER TABLE django_admin_log MODIFY COLUMN object_repr VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL;
+
+//出现了以下错误：“'ascii' codec can't encode characters in position 50-52: ordinal not in range(128)”
+在/etc/apache2/envvars文件加上：
+
+export LANG='en_US.UTF-8'export LC_ALL='en_US.UTF-8'
+
+//重启Apache服务器
+sudo service apache2 restart
+
+//远程连接Ubuntu操作说明
+http://jingyan.baidu.com/article/8ebacdf0cdc64949f75cd555.html
+
+//qq弹出
+http://wpa.qq.com/msgrd?v=3&uin=QQ号（123456789）&site=qq&menu=yes

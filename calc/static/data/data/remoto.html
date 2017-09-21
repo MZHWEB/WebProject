@@ -1,0 +1,74 @@
+<div class="content-title">
+    <button type="button" class="btn btn-default pull-left dropmenu " id="drop"><span class="glyphicon glyphicon-menu-hamburger drop" id="dropspan"></span></button>
+    <h3><pre class="Chinese">遥控列表</pre><pre class="English">IR List</pre></h3>
+</div>
+<div class="content-body">
+    <div class="content-nav">
+        <div class="container">
+            <div>
+                <ul class="nav-box pull-left">
+                    <li class="focus"><pre class="Chinese">我的遥控</pre><pre class="English">My IRs</pre></li>
+                    <li><pre class="Chinese">星标遥控</pre><pre class="English">Starred IRs</pre></li>
+                    <li><pre class="Chinese">云端遥控</pre><pre class="English">All IRs</pre></li>
+                </ul>
+                <div class="pull-right">
+                    <ul class="nav navbar-nav">
+                        <li class="form-group search-box">
+                            <div class="btn-group" role="group" aria-label="...">
+                                <button type="button" class="btn btn-default search-type">屏幕参数</button>
+                                <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-triangle-bottom"></span></button>
+                            </div>
+                            <input type="text" class="form-control search-txt" placeholder="请输入要搜的内容">
+                            <span class="glyphicon glyphicon-search search-icon"></span>
+                        </li>
+                        <li class="btn-group">
+                            <button type="button" class="btn btn-default" id="sortMsg"><pre class="Chinese">默认的排序</pre><pre class="English">Default sort</pre></button>
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="caret"></span>
+                                <span class="sr-only">Toggle Dropdown</span>
+                            </button>
+                            <ul class="dropdown-menu" id="sort">
+                                <li><a href="#"><pre class="Chinese">按名字排序</pre><pre class="English">Name sort</pre></a></li>
+                                <li><a href="#"><pre class="Chinese">按时间排序</pre><pre class="English">Time sort</pre></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <button type="button" class="btn btn-success" alrt="remoto"><span class="glyphicon glyphicon-plus"></span><pre class="Chinese">新建遥控</pre><pre class="English">New IR</pre></button>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div>
+        </div>
+    </div>
+    <div class="content-table">
+        <div class="container">
+            <div class="panel panel-default">
+
+                <!-- Table -->
+                <table class="table table-striped table-bordered  table-condensed table-responsive">
+                    <thead>
+                        <tr>
+                            <th serch="id"><pre class="Chinese">遥控编号</pre><pre class="English">ID</pre></th>
+                            <th serch="remote_name"><pre class="Chinese">遥控名</pre><pre class="English">IR Name</pre></th>
+                            <th serch="remote_head_code"><pre class="Chinese">遥控头码</pre><pre class="English">IR head code</pre></th>
+                            <th serch="IRTime"><pre class="Chinese">创建时间</pre><pre class="English">Time</pre></th>
+                            <th id="author" serch="Author__comment" class="hide"><pre class="Chinese">工程师</pre><pre class="English">Author</pre></th>
+                            <th><pre class="Chinese">操作</pre><pre class="English">operation</pre></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+    <div class="table-pager text-center">
+        <nav aria-label="Page container navigation">
+            <ul class="pagination">
+                
+            </ul>
+        </nav>
+    </div>
+</div>

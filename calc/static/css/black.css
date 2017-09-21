@@ -1,0 +1,39 @@
+.topheader {
+  background-color: #2d2f32;
+  background-size: 100% 100%;
+}
+.topheader div.user {
+  border-color: #292a2d;
+}
+.topheader div.user:hover {
+  background-color: #292a2d;
+}
+.topmenu {
+  background-color: #4b4b4b;
+}
+div.leftmenu .goAdmin {
+  background-color: #1a2226;
+}
+.leftmenu {
+  background-color: #222d32;
+}
+.leftmenu ul li p {
+  color: #fff;
+}
+div.leftmenu .btn-link.active {
+  color: #fff;
+}
+div.pushpin a {
+  color: #fff;
+}
+div.leftmenu ul > li b,
+div.leftmenu ul > li:hover b {
+  background-color: #1e282c;
+  border-right: 3px solid #99cc66;
+}
+.table-striped > tbody > tr.act {
+  background-color: #c5c5c5;
+}
+.table-striped > tbody > tr:hover {
+  background-color: #dbdbdb;
+}

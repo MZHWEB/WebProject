@@ -1,0 +1,86 @@
+<div id="CloudKeypad">
+    <div class="text-center custom-title">
+        <h5><pre class="Chinese">新建按键</pre><pre class="English">New Keypad</pre></h5>
+        <button type="button" class="close"><span>×</span></button>
+    </div>
+    <form id="Keypad"></form>
+    <div class="custom-content">
+        <div>
+            <label class="my-col-6"><span><span class="Chinese">按键名称</span><span class="English">Keypad Name</span></span><input type="text" name="keypad_name" placeholder="输入按键名" form="Keypad"></label>
+            <label class="my-col-3">
+                <div class="checkboxThree pull-left">
+                    <label for="five"><span class="glyphicon glyphicon-ok"></span></label>
+                    <input type="checkbox" value="1" id="five" name="keypad_is_5key_mode" form="Keypad"/>
+                </div>
+                <span><span class="Chinese">开启五键</span><span class="English">Open 5Keys</span></span>
+            </label>
+        </div>
+        <div class="text-center" id="keydown">
+            <span class="btn btn-default btn-xs">MENU</span>
+            <span class="btn btn-default btn-xs" kp="7">CH-</span>
+            <span class="btn btn-default btn-xs" kp="7">CH+</span>
+            <span class="btn btn-default btn-xs" kp="7">VOL-</span>
+            <span class="btn btn-default btn-xs" kp="7">VOL+</span>
+            <span class="btn btn-default btn-xs" kp="5" style="display: none">LEFT</span>
+            <span class="btn btn-default btn-xs" kp="5" style="display: none">RIGHT</span>
+            <span class="btn btn-default btn-xs">SOURCE</span>
+            <span class="btn btn-default btn-xs">POWER</span>
+        </div>
+        <div class="text-center">
+            <label class="my-sm-1">
+                <div class="in"></div>
+                <input type="text" name="keypad_k0" form="Keypad" class="hidden">
+            </label>
+            <label class="my-sm-1">
+                <div class="in"></div>
+                <input type="text" name="keypad_k1" form="Keypad" class="hidden">
+            </label>
+            <label class="my-sm-1">
+                <div class="in"></div>
+                <input type="text" name="keypad_k2" form="Keypad" class="hidden">
+            </label>
+            <label class="my-sm-1">
+                <div class="in"></div>
+                <input type="text" name="keypad_k3" form="Keypad" class="hidden">
+            </label>
+            <label class="my-sm-1">
+                <div class="in"></div>
+                <input type="text" name="keypad_k4" form="Keypad" class="hidden">
+            </label>
+            <label class="my-sm-1" kp="7">
+                <div class="in"></div>
+                <input type="text" name="keypad_k5" form="Keypad" class="hidden">
+            </label>
+            <label class="my-sm-1" kp="7">
+                <div class="in"></div>
+                <input type="text" name="keypad_k6" form="Keypad" class="hidden">
+            </label>
+        </div>
+        <div class="text-center">
+            <label class="my-sm-1">
+                <span>k0</span>
+            </label>
+            <label class="my-sm-1">
+                <span>k1</span>
+            </label>
+            <label class="my-sm-1">
+                <span>k2</span>
+            </label>
+            <label class="my-sm-1">
+                <span>k3</span>
+            </label>
+            <label class="my-sm-1">
+                <span>k4</span>
+            </label>
+            <label class="my-sm-1" kp="7">
+                <span>k5</span>
+            </label>
+            <label class="my-sm-1" kp="7">
+                <span>k6</span>
+            </label>
+        </div>
+    </div>
+    <div class="text-center custom-btn">
+        <button class="btn btn-success"><pre class="Chinese">确认</pre><pre class="English">Sure</pre></button>
+    </div>
+</div>

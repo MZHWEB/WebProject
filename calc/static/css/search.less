@@ -1,0 +1,45 @@
+.search-box{
+  position: relative;
+  .btn-group{
+    position: absolute;
+    left: -64%;
+    top:0;
+    .search-type{
+      width: 100px;
+      height: 34px;
+    }
+    .btn-default{
+      height: 34px;
+    }
+    >ul{
+      width: 144px;
+      border-bottom: 0;
+      border-left: 0;
+      position: absolute;
+      top: 100%;
+      left: -5px;
+      z-index: 30;
+      display: none;
+      >li{
+        border: 1px solid #ccc;
+        border-top: 0;
+        background-color: #fff;
+        margin-left: 0;
+        padding: 6px;
+        cursor: pointer;
+        &:hover{
+          background-color: #ddd;
+        }
+      }
+    }
+  }
+  .search-icon{
+    position: absolute;
+    right: 12px;
+    top:10px;
+    color: #cccccc;
+  }
+  .search-txt{
+    padding-right: 36px;
+  }
+}

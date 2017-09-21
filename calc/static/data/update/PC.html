@@ -1,0 +1,150 @@
+<div id="CloudPanel">
+        <div class="text-center custom-title">
+            <h5><pre class="Chinese">新建配屏</pre><pre class="English">New Panel</pre></h5>
+            <button type="button" class="close"><span>×</span></button>
+        </div>
+        <form action="" id="Panel"></form>
+        <div class="custom-content">
+            <div>
+                <label class="my-col-6"><span><span class="Chinese">配屏名称</span><span class="English">Panel Name</span></span><input type="text" placeholder="输入配屏名" name="panel_name" form="Panel"></label>
+            </div>
+            <div>
+                <label class="my-col-3">
+                    <div class="checkboxThree pull-left">
+                        <label for="DUALPORT"><span class="glyphicon glyphicon-ok"></span></label>
+                        <input type="checkbox" value="1" id="DUALPORT" name="panel_dual_port" form="Panel"/>
+                    </div>
+                    <span>DUAL PORT</span>
+                </label>
+                <label class="my-col-3">
+                    <div class="checkboxThree pull-left">
+                        <label for="clock"><span class="glyphicon glyphicon-ok"></span></label>
+                        <input type="checkbox" value="1" id="clock" name="panel_double_clock" form="Panel"/>
+                    </div>
+                    <span>DOUBLE CLOCK</span>
+                </label>
+                <label class="my-col-3">
+                    <div class="checkboxThree pull-left">
+                        <label for="swap_port"><span class="glyphicon glyphicon-ok"></span></label>
+                        <input type="checkbox" value="1" id="swap_port" name="panel_swap_port" form="Panel"/>
+                    </div>
+                    <span>SWAP_PORT</span>
+                </label>
+                <label class="my-col-3">
+                    <div class="checkboxThree pull-left">
+                        <label for="odd_ml"><span class="glyphicon glyphicon-ok"></span></label>
+                        <input type="checkbox" value="1" id="odd_ml" name="panel_swap_odd_ml" form="Panel"/>
+                    </div>
+                    <span>SWAP ODD_ML</span>
+                </label>
+            </div>
+            <div>
+                <label class="my-col-3">
+                    <div class="checkboxThree pull-left">
+                        <label for="EVEN_ML"><span class="glyphicon glyphicon-ok"></span></label>
+                        <input type="checkbox" value="1" id="EVEN_ML" name="panel_swap_even_ml" form="Panel"/>
+                    </div>
+                    <span>SWAP EVEN_ML</span>
+                </label>
+                <label class="my-col-3">
+                    <div class="checkboxThree pull-left">
+                        <label for="ODD_RB"><span class="glyphicon glyphicon-ok"></span></label>
+                        <input type="checkbox" value="1" id="ODD_RB" name="panel_swap_odd_rb" form="Panel"/>
+                    </div>
+                    <span>SWAP ODD_RB</span>
+                </label>
+                <label class="my-col-3">
+                    <div class="checkboxThree pull-left">
+                        <label for="EVEN_RB"><span class="glyphicon glyphicon-ok"></span></label>
+                        <input type="checkbox" value="1" id="EVEN_RB" name="panel_swap_even_rb" form="Panel"/>
+                    </div>
+                    <span>SWAP EVEN_RB</span>
+                </label>
+                <label class="my-col-3">
+                    <div class="checkboxThree pull-left">
+                        <label for="ODD_RG"><span class="glyphicon glyphicon-ok"></span></label>
+                        <input type="checkbox" value="1" id="ODD_RG" name="panel_swap_odd_rg" form="Panel"/>
+                    </div>
+                    <span>SWAP ODD_RG</span>
+                </label>
+            </div>
+            <div>
+                <label class="my-col-3">
+                    <div class="checkboxThree pull-left">
+                        <label for="EVEN_RG"><span class="glyphicon glyphicon-ok"></span></label>
+                        <input type="checkbox" value="1" id="EVEN_RG" name="panel_swap_even_rg" form="Panel"/>
+                    </div>
+                    <span>SWAP EVEN_RG</span>
+                </label>
+                <label class="my-col-3">
+                    <div class="checkboxThree pull-left">
+                        <label for="ODD_GB"><span class="glyphicon glyphicon-ok"></span></label>
+                        <input type="checkbox" value="1" id="ODD_GB" name="panel_swap_odd_gb" form="Panel"/>
+                    </div>
+                    <span>SWAP ODD_GB</span>
+                </label>
+                <label class="my-col-3">
+                    <div class="checkboxThree pull-left">
+                        <label for="EVEN_GB"><span class="glyphicon glyphicon-ok"></span></label>
+                        <input type="checkbox" value="1" id="EVEN_GB" name="panel_swap_even_gb" form="Panel"/>
+                    </div>
+                    <span>SWAP EVEN_GB</span>
+                </label>
+            </div>
+            <div>
+                <label class="my-col-3">
+                    <div class="checkboxThree pull-left">
+                        <label for="heibai"><span class="glyphicon glyphicon-ok"></span></label>
+                        <input type="checkbox" value="1" id="heibai" name="enable_black_white_change" form="Panel"/>
+                    </div>
+                    <span>ENABLE BLACK WHITE</span>
+                </label>
+                <label class="my-col-3">
+                    <div class="checkboxThree pull-left">
+                        <label for="60HZ"><span class="glyphicon glyphicon-ok"></span></label>
+                        <input type="checkbox" value="1" id="60HZ" name="panel_enable_60hz" form="Panel"/>
+                    </div>
+                    <span>60HZ</span>
+                </label>
+            </div>
+            <div>
+                <label class="my-col-4"><span>MAP</span><input type="text" name="panel_map" value="16" form="Panel"></label>
+                <label class="my-col-4"><span>ON_TIMING1</span><input type="text" name="panel_on_timing1" form="Panel"></label>
+                <label class="my-col-4"><span>ON_TIMING2</span><input type="text" name="panel_on_timing2" form="Panel"></label>
+            </div>
+            <div>
+                <label class="my-col-4"><span>HSYNC WIDTH</span><input type="text" name="panel_hsync_width" form="Panel"></label>
+                <label class="my-col-4"><span>HSYNC BACK PORCH</span><input type="text" name="panel_hsync_back_porch" form="Panel"></label>
+                <label class="my-col-4"><span>VSYNC WIDTH</span><input type="text" name="panel_vsync_width" form="Panel"></label>
+            </div>
+            <div>
+                <label class="my-col-4"><span>VSYNC BACK PORCH</span><input type="text" name="panel_vsync_back_porch" form="Panel"></label>
+                <label class="my-col-4"><span>WIDTH DEFINE</span><input type="text" name="panel_width_define" form="Panel"></label>
+                <label class="my-col-4"><span>HEIGHT DEFINE</span><input type="text" name="panel_height_define" form="Panel"></label>
+            </div>
+            <div>
+                <label class="my-col-4"><span>MAX HTOTAL</span><input type="text" name="panel_max_htotal" form="Panel"></label>
+                <label class="my-col-4"><span>HTOTAL</span><input type="text" name="panel_htotal" form="Panel"></label>
+                <label class="my-col-4"><span>MIN HTOTAL</span><input type="text" name="panel_min_htotal" form="Panel"></label>
+            </div>
+            <div>
+                <label class="my-col-4"><span>MAX VTOTAL</span><input type="text" name="panel_max_vtotal" form="Panel"></label>
+                <label class="my-col-4"><span>VTOTAL</span><input type="text" name="panel_vtotal" form="Panel"></label>
+                <label class="my-col-4"><span>MIN VTOTAL</span><input type="text" name="panel_min_vtotal" form="Panel"></label>
+            </div>
+            <div class="row">
+                <div class="col-xs-3 col-sm-2 text-right">
+                    <label class="my-col-3"><span class="label-title">OUT TIMING MODE</span></label>
+                </div>
+                <div class="col-xs-6 col-sm-6">
+                    <label class="input-group" drop-down="1">
+                        <input form="Panel" type="text" name="panel_out_timing_mode" value="E_PNL_CHG_DCLK" val="E_PNL_CHG_DCLK|E_PNL_CHG_HTOTAL|E_PNL_CHG_VTOTAL" readonly class="form-control">
+                        <span class="glyphicon glyphicon-triangle-bottom down-img"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="text-center custom-btn">
+            <button class="btn btn-success"><pre class="Chinese">确认</pre><pre class="English">Sure</pre></button>
+        </div>
+    </div>

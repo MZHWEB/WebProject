@@ -1,0 +1,175 @@
+<div id="CloudPQ">
+        <div class="text-center custom-title">
+            <h5><pre class="Chinese">新建PQ</pre><pre class="English">New PQ</pre></h5>
+            <button type="button" class="close"><span>×</span></button>
+        </div>
+        <form id="PQ"></form>
+        <div class="custom-content">
+            <div>
+                <label class="my-col-6"><span><span class="Chinese">PQ名称</span><span class="English">PQ Name</span></span><input type="text" placeholder="输入PQ名" name="pq_name"></label>
+                <label class="my-col-6"><button class="btn btn-default btn-sm" id="copy-pq"><pre class="Chinese">复制到所有通道</pre><pre class="English">Copy to all</pre></button></label>
+            </div>
+            <ul>
+                <li class="active">VGA</li>
+                <li>ATV</li>
+                <li>AV</li>
+                <li>YPBPR</li>
+                <li>HDMI</li>
+                <li>DTV</li>
+                <li>DMP</li>
+                <li>DVD</li>
+                <li>SCART</li>
+                <li>SVIDEO</li>
+            </ul>
+            <h5>色温(Color Temp)</h5>
+            <div class="CT">
+                <div>
+                    <label class="my-col-3"></label>
+                    <label class="my-col-3">COOL</label>
+                    <label class="my-col-3">NORMAL</label>
+                    <label class="my-col-3">WARM</label>
+                </div>
+                <div>
+                    <label class="my-col-3">GAINR(0~2047)</label>
+                    <label class="my-col-3"><input type="text" name="cool_gainr_VGA"></label>
+                    <label class="my-col-3"><input type="text" name="normal_gainr_VGA"></label>
+                    <label class="my-col-3"><input type="text" name="warm_gainr_VGA"></label>
+                </div>
+                <div>
+                    <label class="my-col-3">GAING(0~2047)</label>
+                    <label class="my-col-3"><input type="text" name="cool_gaing_VGA"></label>
+                    <label class="my-col-3"><input type="text" name="normal_gaing_VGA"></label>
+                    <label class="my-col-3"><input type="text" name="warm_gaing_VGA"></label>
+                </div>
+                <div>
+                    <label class="my-col-3">GAINB(0~2047)</label>
+                    <label class="my-col-3"><input type="text" name="cool_gainb_VGA"></label>
+                    <label class="my-col-3"><input type="text" name="normal_gainb_VGA"></label>
+                    <label class="my-col-3"><input type="text" name="warm_gainb_VGA"></label>
+                </div>
+                <div>
+                    <label class="my-col-3">OFFSETR(0~2047)</label>
+                    <label class="my-col-3"><input type="text" name="cool_offsetr_VGA"></label>
+                    <label class="my-col-3"><input type="text" name="normal_offsetr_VGA"></label>
+                    <label class="my-col-3"><input type="text" name="warm_offsetr_VGA"></label>
+                </div>
+                <div>
+                    <label class="my-col-3">OFFSETG(0~2047)</label>
+                    <label class="my-col-3"><input type="text" name="cool_offsetg_VGA"></label>
+                    <label class="my-col-3"><input type="text" name="normal_offsetg_VGA"></label>
+                    <label class="my-col-3"><input type="text" name="warm_offsetg_VGA"></label>
+                </div>
+                <div>
+                    <label class="my-col-3">OFFSETB(0~2047)</label>
+                    <label class="my-col-3"><input type="text" name="cool_offsetb_VGA"></label>
+                    <label class="my-col-3"><input type="text" name="normal_offsetb_VGA"></label>
+                    <label class="my-col-3"><input type="text" name="warm_offsetb_VGA"></label>
+                </div>
+            </div>
+            <h5>图像曲线(Non Linear Curve)</h5>
+            <div class="NLC">
+                <div>
+                    <label class="pq-sm-2">(0~255)</label>
+                    <label class="pq-sm-2">OSD0</label>
+                    <label class="pq-sm-2">OSD25</label>
+                    <label class="pq-sm-2">OSD50</label>
+                    <label class="pq-sm-2">OSD75</label>
+                    <label class="pq-sm-2">OSD100</label>
+                </div>
+                <div>
+                    <label class="pq-sm-2">对比度(Contrast)</label>
+                    <label class="pq-sm-2"><input type="text" name="contrast_osd0_VGA"></label>
+                    <label class="pq-sm-2"><input type="text" name="contrast_osd25_VGA"></label>
+                    <label class="pq-sm-2"><input type="text" name="contrast_osd50_VGA"></label>
+                    <label class="pq-sm-2"><input type="text" name="contrast_osd75_VGA"></label>
+                    <label class="pq-sm-2"><input type="text" name="contrast_osd100_VGA"></label>
+                </div>
+                <div>
+                    <label class="pq-sm-2">亮度(Brightness)</label>
+                    <label class="pq-sm-2"><input type="text" name="brightness_osd0_VGA"></label>
+                    <label class="pq-sm-2"><input type="text" name="brightness_osd25_VGA"></label>
+                    <label class="pq-sm-2"><input type="text" name="brightness_osd50_VGA"></label>
+                    <label class="pq-sm-2"><input type="text" name="brightness_osd75_VGA"></label>
+                    <label class="pq-sm-2"><input type="text" name="brightness_osd100_VGA"></label>
+                </div>
+                <div>
+                    <label class="pq-sm-2">饱和度(Saturation)</label>
+                    <label class="pq-sm-2"><input type="text" name="saturation_osd0_VGA"></label>
+                    <label class="pq-sm-2"><input type="text" name="saturation_osd25_VGA"></label>
+                    <label class="pq-sm-2"><input type="text" name="saturation_osd50_VGA"></label>
+                    <label class="pq-sm-2"><input type="text" name="saturation_osd75_VGA"></label>
+                    <label class="pq-sm-2"><input type="text" name="saturation_osd100_VGA"></label>
+                </div>
+                <div>
+                    <label class="pq-sm-2">清晰度(Sharpness)</label>
+                    <label class="pq-sm-2"><input type="text" name="sharpness_osd0_VGA"></label>
+                    <label class="pq-sm-2"><input type="text" name="sharpness_osd25_VGA"></label>
+                    <label class="pq-sm-2"><input type="text" name="sharpness_osd50_VGA"></label>
+                    <label class="pq-sm-2"><input type="text" name="sharpness_osd75_VGA"></label>
+                    <label class="pq-sm-2"><input type="text" name="sharpness_osd100_VGA"></label>
+                </div>
+                <div>
+                    <label class="pq-sm-2">色调(Hue)</label>
+                    <label class="pq-sm-2"><input type="text" name="hue_osd0_VGA"></label>
+                    <label class="pq-sm-2"><input type="text" name="hue_osd25_VGA"></label>
+                    <label class="pq-sm-2"><input type="text" name="hue_osd50_VGA"></label>
+                    <label class="pq-sm-2"><input type="text" name="hue_osd75_VGA"></label>
+                    <label class="pq-sm-2"><input type="text" name="hue_osd100_VGA"></label>
+                </div>
+            </div>
+            <h5>QMAPREWRITE</h5>
+            <div class="QMAPREWRITE">
+                <div>
+                    <label class="my-col-3"></label>
+                    <label class="my-col-3">ICC</label>
+                    <label class="my-col-3">IBC</label>
+                    <label class="my-col-3">IHC</label>
+                </div>
+                <div>
+                    <label class="my-col-3">R <span class="color red"></span></label>
+                    <label class="my-col-3"><input type="text" name="icc_r"></label>
+                    <label class="my-col-3"><input type="text" name="ibc_r"></label>
+                    <label class="my-col-3"><input type="text" name="ihc_r"></label>
+                </div>
+                <div>
+                    <label class="my-col-3">G <span class="color green"></span></label>
+                    <label class="my-col-3"><input type="text" name="icc_g"></label>
+                    <label class="my-col-3"><input type="text" name="ibc_g"></label>
+                    <label class="my-col-3"><input type="text" name="ihc_g"></label>
+                </div>
+                <div>
+                    <label class="my-col-3">B <span class="color blue"></span></label>
+                    <label class="my-col-3"><input type="text" name="icc_b"></label>
+                    <label class="my-col-3"><input type="text" name="ibc_b"></label>
+                    <label class="my-col-3"><input type="text" name="ihc_b"></label>
+                </div>
+                <div>
+                    <label class="my-col-3">C <span class="color qing"></span></label>
+                    <label class="my-col-3"><input type="text" name="icc_c"></label>
+                    <label class="my-col-3"><input type="text" name="ibc_c"></label>
+                    <label class="my-col-3"><input type="text" name="ihc_c"></label>
+                </div>
+                <div>
+                    <label class="my-col-3">M <span class="color pink"></span></label>
+                    <label class="my-col-3"><input type="text" name="icc_m"></label>
+                    <label class="my-col-3"><input type="text" name="ibc_m"></label>
+                    <label class="my-col-3"><input type="text" name="ihc_m"></label>
+                </div>
+                <div>
+                    <label class="my-col-3">Y <span class="color yellow"></span></label>
+                    <label class="my-col-3"><input type="text" name="icc_y"></label>
+                    <label class="my-col-3"><input type="text" name="ibc_y"></label>
+                    <label class="my-col-3"><input type="text" name="ihc_y"></label>
+                </div>
+                <div>
+                    <label class="my-col-3">F <span class="color orange"></span></label>
+                    <label class="my-col-3"><input type="text" name="icc_f"></label>
+                    <label class="my-col-3"><input type="text" name="ibc_f"></label>
+                    <label class="my-col-3"><input type="text" name="ihc_f"></label>
+                </div>
+            </div>
+        </div>
+        <div class="text-center custom-btn">
+            <button class="btn btn-success"><pre class="Chinese">确认</pre><pre class="English">Sure</pre></button>
+        </div>
+    </div>

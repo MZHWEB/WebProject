@@ -1,0 +1,1037 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "微软雅黑", Helvetica, Arial, sans-serif;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+h3 {
+  margin: 0;
+}
+label {
+  font-weight: normal;
+}
+.h1 pre,
+.h2 pre,
+.h3 pre,
+.h4 pre,
+.h5 pre,
+.h6 pre,
+h1 pre,
+h2 pre,
+h3 pre,
+h4 pre,
+h5 pre,
+h6 pre {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+}
+.h1 pre,
+h1 pre {
+  font-size: 36px;
+}
+.h2 pre,
+h2 pre {
+  font-size: 30px;
+}
+.h3 pre,
+h3 pre {
+  font-size: 22px;
+}
+.h4 pre,
+h4 pre {
+  font-size: 18px;
+}
+.h5 pre,
+h5 pre {
+  font-size: 14px;
+}
+.h6 pre,
+h6 pre {
+  font-size: 12px;
+}
+pre.Chinese,
+pre.English {
+  padding: 0;
+  margin: 0;
+  font-family: "微软雅黑", Helvetica, Arial, sans-serif;
+  line-height: normal;
+  word-break: normal;
+  word-wrap: normal;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  color: inherit;
+}
+body.CH .Chinese {
+  display: inline;
+}
+body.CH .English {
+  display: none;
+}
+body.En .English {
+  display: inline;
+}
+body.En .Chinese {
+  display: none;
+}
+label > input[type=file] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  height: 35px;
+  overflow: hidden;
+  cursor: pointer;
+  filter: alpha(opacity=0);
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+  opacity: 0;
+  z-index: 20;
+}
+.row {
+  margin: 0;
+}
+.table > tbody > tr > td,
+.table > tbody > tr > th,
+.table > tfoot > tr > td,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > thead > tr > th {
+  padding: 13px 8px;
+  max-width: 180px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.table > tbody > tr > td {
+  font-size: 0.8em;
+}
+.topheader {
+  height: 50px;
+  width: 100%;
+  line-height: 50px;
+  color: #FFF;
+}
+.topheader > div {
+  padding: 0 15px;
+}
+.topheader > div:not(.logo) {
+  cursor: pointer;
+}
+.topheader .user {
+  position: relative;
+  border-left: 1px solid;
+}
+.topheader .user ul {
+  width: 100%;
+  margin-top: 0;
+  padding: 0;
+}
+.topheader .user ul li a {
+  padding: 10px 15px;
+}
+.topheader .user ul li a span {
+  margin-right: 5px;
+}
+.topheader .logo {
+  height: 50px;
+}
+.topheader .logo b {
+  font-size: 1.3em;
+}
+.topheader,
+.content-title {
+  position: fixed;
+}
+.topheader {
+  top: 0;
+  left: 0;
+  z-index: 20;
+}
+.content-title {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  right: 0;
+  z-index: 19;
+  transition: 0.2s linear margin-left;
+}
+.headerholder {
+  height: 90px;
+}
+.user-img img {
+  width: 30px;
+  height: 30px;
+  border: 1px #cccccc solid;
+  background: #ffffff;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+div.leftmenu {
+  width: 200px;
+  position: fixed;
+  top: 50px;
+  bottom: 0;
+  left: -200px;
+  z-index: 20;
+  transition: 0.2s linear left;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+}
+div.leftmenu .btn-link:focus {
+  outline: none;
+}
+div.leftmenu .btn-link.active {
+  color: #23527c;
+}
+div.leftmenu .goAdmin {
+  padding-top: 10px;
+}
+div.leftmenu > ul {
+  overflow: auto;
+  position: absolute;
+  top: 50px;
+  bottom: 0;
+  left: 0;
+}
+div.leftmenu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 200px;
+}
+div.leftmenu ul > li p {
+  margin: 0;
+  position: relative;
+  height: 44px;
+  text-align: left;
+  padding: 10px;
+  padding-left: 20px;
+  cursor: pointer;
+  border-bottom: 1px solid #484848;
+}
+div.leftmenu ul > li p i {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+div.leftmenu ul b {
+  position: absolute;
+  float: left;
+  width: 200px;
+  height: 44px;
+  margin-left: -200px;
+  transition: 0.4s linear all;
+}
+div.leftmenu ul li:hover b {
+  margin-left: 0px;
+}
+div.leftmenu ul li:hover p {
+  color: #FFF;
+}
+div.leftmenu ul li.active p {
+  color: #FFF;
+}
+.content {
+  position: relative;
+}
+.content.active {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.content.active .content-title {
+  position: absolute;
+  top: 0;
+}
+.content .content-title {
+  margin: 0 auto;
+  background-color: #F8F9FB;
+}
+.content .content-title .dropmenu {
+  border-color: transparent;
+  margin: 3px;
+}
+.content .content-title h3 {
+  text-align: center;
+  padding: 7px 0;
+}
+.content .content-nav {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
+  height: 40px;
+  background-color: #fef9f9;
+}
+.content .content-nav ul.nav-box {
+  overflow-x: auto;
+}
+.content .content-nav ul.nav-box li {
+  float: left;
+  padding: 10px 20px;
+  background-color: #e9e9e9;
+  margin: 0 1px;
+  cursor: pointer;
+  position: relative;
+}
+.content .content-nav ul.nav-box li.focus,
+.content .content-nav ul.nav-box li:hover {
+  background-color: #fff;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+}
+.content .content-nav .nav {
+  height: 40px;
+  padding: 3px 15px;
+}
+.content .content-nav .nav li {
+  margin-left: 5px;
+}
+.content .content-table {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  bottom: 64px;
+  right: 0;
+  overflow: auto;
+}
+.panel {
+  margin: 0;
+  border: 0;
+}
+.label {
+  font-weight: normal;
+}
+.pagination {
+  vertical-align: top;
+  margin: 15px 0;
+}
+.pagination > .active > a,
+.pagination > .active > a:focus,
+.pagination > .active > a:hover,
+.pagination > .active > span,
+.pagination > .active > span:focus,
+.pagination > .active > span:hover {
+  color: #555;
+  background-color: #eee;
+  border-color: #ddd;
+}
+.pagination > li > a,
+.pagination > li > span {
+  color: #555;
+}
+.pagination > li {
+  position: relative;
+}
+.jumpbox {
+  position: absolute;
+  bottom: 100%;
+  left: 231px;
+  height: 30px;
+  width: 80px;
+}
+.jumpbox input {
+  width: 38px;
+  height: 100%;
+  padding: 0 5px;
+  font-size: 0.8em;
+  border: 1px solid #ccc;
+}
+.jumpbox button {
+  height: 30px;
+  border-left: 0;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+.table-pager {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+}
+.plate div {
+  margin-top: 20px;
+}
+.content {
+  transition: 0.2s linear all;
+}
+#index .pro-box {
+  padding-top: 10px;
+}
+#index .pro-box > div.row {
+  margin-bottom: 10px;
+}
+#index .pro-box > div.row > .text-right {
+  padding-top: 20px;
+}
+#index .pro-box .label-title {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  display: block;
+  padding: 6px;
+}
+#index .pro-box .label-title pre {
+  font-size: 14px;
+}
+#index .pro-box .checkboxThree {
+  margin: 7px 0;
+}
+.selector {
+  max-height: 200px;
+  overflow: auto;
+  position: absolute;
+  left: 15px;
+  right: 15px;
+  background-color: #FFF;
+  z-index: 15;
+  border: 1px solid #ccc;
+}
+.selector li,
+.selector input {
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+.selector li {
+  height: 32px;
+  padding: 5px 10px;
+  border-bottom: 1px solid #ccc;
+}
+.selector li:hover {
+  background-color: #999;
+}
+.selector li.active {
+  background-color: #eee;
+}
+.selector li:last-child {
+  border-bottom: 0;
+}
+label.input-group {
+  position: relative;
+  font-weight: normal;
+  width: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  z-index: 10;
+}
+label.input-group div.logo-text {
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+  -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  position: relative;
+  z-index: 2;
+  float: left;
+  margin-bottom: 0;
+  display: table-cell;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+label.input-group .down-img {
+  font-size: 0.6em;
+  font-weight: normal;
+  position: absolute;
+  top: 40%;
+  right: 12px;
+  z-index: 5;
+}
+label.input-group #upbtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+label.input-group #upbtn input[type=file] {
+  width: 35px;
+}
+label.input-group #upbtn .down-img {
+  right: 0;
+  padding: 9px 12px;
+  border-radius: 0;
+}
+.yuLogo {
+  position: absolute;
+  top: 100%;
+  left: -20px;
+  z-index: 325;
+  padding: 10px;
+  background-color: #fff;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  display: none;
+}
+.logoClose {
+  position: absolute;
+  top: 3px;
+  right: -18px;
+  padding: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+.logoClose:hover {
+  color: #ee0000;
+}
+/**
+ * Create the checkbox event for the label
+ */
+/******project 页面表单框******/
+.custom-bg,
+.zhezhao {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 20;
+  display: none;
+}
+.custom {
+  position: fixed;
+  top: 50px;
+  right: 30px;
+  bottom: 30px;
+  z-index: 30;
+  width: 700px;
+  padding: 10px;
+  background-color: #f9f2f4;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  border-radius: 4px;
+  margin-right: -740px;
+  transition: 0.2s linear all;
+}
+.custom .custom-content h5 {
+  font-size: 1.5em;
+  color: red;
+}
+.custom .custom-title,
+#list .custom-title {
+  border-bottom: 1px solid #ccc;
+  position: relative;
+}
+.custom .custom-title button,
+#list .custom-title button {
+  position: absolute;
+  right: 10px;
+  top: -5px;
+}
+.custom #CloudPanel .custom-content > div:not(:first-child) span,
+#list #CloudPanel .custom-content > div:not(:first-child) span {
+  font-size: 0.6em;
+}
+.custom #CloudPanel .row div.col-lg-2 span,
+#list #CloudPanel .row div.col-lg-2 span {
+  line-height: 8px;
+}
+.custom .custom-content,
+#list .custom-content {
+  position: absolute;
+  top: 45px;
+  bottom: 45px;
+  left: 10px;
+  right: 10px;
+  margin-top: 20px;
+  overflow: auto;
+}
+.custom .custom-content input[type=text],
+#list .custom-content input[type=text] {
+  padding: 2px 5px;
+  height: 27.2px;
+}
+.custom .custom-content .checkboxThree,
+#list .custom-content .checkboxThree {
+  margin: 0;
+}
+.custom .custom-content > div,
+#list .custom-content > div,
+.custom .custom-content div.fuyong > div,
+#list .custom-content div.fuyong > div,
+.custom .custom-content div.unUser > div,
+#list .custom-content div.unUser > div {
+  min-height: 54px;
+}
+.custom .custom-content > div span.btn-xs,
+#list .custom-content > div span.btn-xs,
+.custom .custom-content div.fuyong > div span.btn-xs,
+#list .custom-content div.fuyong > div span.btn-xs,
+.custom .custom-content div.unUser > div span.btn-xs,
+#list .custom-content div.unUser > div span.btn-xs {
+  display: inline-block;
+  vertical-align: top;
+  width: 54px;
+  padding: 3px 5px;
+  font-size: 9px;
+}
+.custom .custom-content > div > label,
+#list .custom-content > div > label,
+.custom .custom-content div.fuyong > div > label,
+#list .custom-content div.fuyong > div > label,
+.custom .custom-content div.unUser > div > label,
+#list .custom-content div.unUser > div > label {
+  box-sizing: border-box;
+  margin-bottom: 0;
+  vertical-align: top;
+}
+.custom .custom-content > div > label > span,
+#list .custom-content > div > label > span,
+.custom .custom-content div.fuyong > div > label > span,
+#list .custom-content div.fuyong > div > label > span,
+.custom .custom-content div.unUser > div > label > span,
+#list .custom-content div.unUser > div > label > span {
+  display: inline-block;
+  width: 60px;
+  margin-right: 10px;
+  vertical-align: middle;
+  text-align: right;
+  font-size: 0.9em;
+  font-weight: normal;
+}
+.custom .custom-content label.my-sm-1,
+#list .custom-content label.my-sm-1 {
+  width: 80px;
+  margin-right: 6px;
+}
+.custom .custom-content label.my-sm-1 > span,
+#list .custom-content label.my-sm-1 > span {
+  width: 60px;
+  text-align: center;
+}
+.custom .custom-content label.my-sm-1 div.in,
+#list .custom-content label.my-sm-1 div.in {
+  font-weight: normal;
+  text-align: center;
+  margin-top: 20px;
+  width: 80px;
+  height: 28px;
+  padding: 2px 4px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+.custom .custom-content label.my-sm-1 input[type=text],
+#list .custom-content label.my-sm-1 input[type=text] {
+  width: 50px;
+}
+.custom .custom-content label.my-col-3,
+#list .custom-content label.my-col-3 {
+  width: 150px;
+}
+.custom .custom-content label.my-col-3 input[type=text],
+#list .custom-content label.my-col-3 input[type=text] {
+  width: 60px;
+}
+.custom .custom-content label.my-col-4,
+#list .custom-content label.my-col-4 {
+  width: 200px;
+}
+.custom .custom-content label.my-col-4 input[type=text],
+#list .custom-content label.my-col-4 input[type=text] {
+  width: 86px;
+}
+.custom .custom-content label.my-col-6,
+#list .custom-content label.my-col-6 {
+  width: 300px;
+}
+.custom .custom-content label.my-col-6 input[type=text],
+#list .custom-content label.my-col-6 input[type=text] {
+  width: 150px;
+}
+.custom .custom-content label.my-col-9,
+#list .custom-content label.my-col-9 {
+  width: 450px;
+}
+.custom .custom-content label.my-col-9 input[type=text],
+#list .custom-content label.my-col-9 input[type=text] {
+  width: 150px;
+}
+.custom .custom-content label.my-col-12,
+#list .custom-content label.my-col-12 {
+  width: 600px;
+}
+.custom .custom-content label.my-col-12 input[type=text],
+#list .custom-content label.my-col-12 input[type=text] {
+  width: 150px;
+}
+.custom #CloudPQ .custom-content div > div,
+#list #CloudPQ .custom-content div > div {
+  height: 54px;
+}
+.custom #CloudPQ .custom-content div > div:nth-child(1) label,
+#list #CloudPQ .custom-content div > div:nth-child(1) label {
+  line-height: 54px;
+}
+.custom #CloudPQ .custom-content div > div input[type=text],
+#list #CloudPQ .custom-content div > div input[type=text] {
+  width: 80%;
+}
+.custom #CloudPQ .custom-content div > div label,
+#list #CloudPQ .custom-content div > div label {
+  vertical-align: top;
+  text-align: center;
+}
+.custom #CloudPQ .custom-content div > div .pq-sm-2,
+#list #CloudPQ .custom-content div > div .pq-sm-2 {
+  width: 100px;
+}
+.custom #CloudPQ ul,
+#list #CloudPQ ul {
+  max-height: 33px;
+  padding-bottom: 1px;
+  border-bottom: 1px solid #ccc;
+}
+.custom #CloudPQ ul li,
+#list #CloudPQ ul li {
+  display: inline-block;
+  vertical-align: top;
+  padding: 5px 10px;
+  height: 32px;
+  text-align: center;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+.custom #CloudPQ ul li.active,
+#list #CloudPQ ul li.active {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  margin-top: 1px;
+  border-bottom: 1px solid #fff;
+}
+.custom #CloudPQ ul li:not(.active):hover,
+#list #CloudPQ ul li:not(.active):hover {
+  background-color: #ddd;
+}
+.custom .custom-btn,
+#list .custom-btn {
+  padding: 5px 0;
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+  border-top: 1px solid #ccc;
+}
+/*****************用户管理界面*********************/
+#user-modal {
+  width: 530px;
+  min-height: 200px;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-left: -250px;
+  transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  /* IE 9 */
+  -webkit-transform: translateY(-50%);
+  z-index: 500;
+  display: none;
+  padding: 10px 20px;
+}
+#user-modal span.close-use {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-weight: normal;
+  cursor: pointer;
+}
+#user-modal span.close-use:hover {
+  color: #d00810;
+}
+#user-modal #u-load > p,
+#user-modal #u-load .rpic-t {
+  margin: 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+#user-modal #u-load > p button:focus,
+#user-modal #u-load .rpic-t button:focus {
+  outline: none;
+}
+#user-modal #u-load .hint {
+  margin: 34px 0;
+}
+#user-modal #u-load .hint p {
+  margin: 0;
+  font-size: 1.6em;
+}
+#user-modal #u-load .selImg {
+  border-right: 1px solid #ccc;
+}
+#user-modal #u-load .yuImg > div {
+  margin-top: 30px;
+}
+#user-modal #u-load .yuImg .circle img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+#user-modal #u-load .yuImg .bigFace img {
+  width: 120px;
+}
+#user-modal #u-load > div {
+  margin-top: 10px;
+}
+#user-modal #u-load > div input {
+  width: 90%;
+}
+#user-modal .rpic-load {
+  margin-top: 10px;
+  height: 400px;
+  overflow-y: auto;
+}
+#user-modal .rpic-load .uploadFace {
+  margin: 140px auto;
+}
+#user-modal .rpic-load .sutraFace img {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+#user-modal #u-load label {
+  vertical-align: bottom;
+  position: relative;
+  z-index: 10;
+}
+#user-modal #u-load label input[type=file] {
+  width: 100px;
+  height: 100px;
+}
+#user-modal #u-load label:hover .upicMsg {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+#user-modal .upicMsg {
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  background-color: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  overflow: hidden;
+}
+#user-modal .upicMsg span {
+  font-size: 11.9em;
+  font-weight: normal;
+  color: #8c8c8c;
+}
+#user-modal .upicMsg img {
+  vertical-align: top;
+}
+/*****************列表参数********************/
+#list {
+  position: fixed;
+  width: 800px;
+  top: 50px;
+  bottom: 30px;
+  left: 50%;
+  z-index: 30;
+  padding: 10px;
+  margin-left: -400px;
+  background-color: #fff;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  display: none;
+  opacity: 0;
+  transition: 0.2s linear all;
+}
+#list .custom-content label.my-col-3 {
+  width: 186px;
+}
+#list .custom-content label.my-col-3 input[type=text] {
+  width: 85px;
+}
+#list #list .custom-content > div > label > span {
+  width: 66px;
+}
+#list .custom-content label.my-col-4 {
+  width: 250px;
+}
+#list .custom-content label.my-col-4 input[type=text] {
+  width: 125px;
+}
+#list .custom-content h5 {
+  font-size: 1.5em;
+  color: red;
+}
+#list #CloudPQ .custom-content div > div .pq-sm-2 {
+  width: 122px;
+}
+.modeType input {
+  display: none;
+}
+.defaultBg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+.content tbody td:nth-child(6) {
+  position: relative;
+}
+div.KeyPadShow {
+  width: 362px;
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  z-index: 20;
+  border-top: 1px solid #eee;
+  border-left: 1px solid #eee;
+  background-color: #fff;
+}
+div.KeyPadShow ul li {
+  float: left;
+  padding: 4px 0;
+  width: 90px;
+  height: 29px;
+  padding: 5px;
+  border-bottom: 1px solid #eee;
+  border-right: 1px solid #eee;
+}
+div.KeyPadShow ul li:nth-of-type(odd) {
+  background-color: #c5eaaa;
+}
+#listEdit {
+  position: fixed;
+  right: 20px;
+  bottom: 100px;
+  z-index: 200;
+}
+#listEdit li {
+  text-align: right;
+}
+div.pushpin {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+div.pushpin a.active {
+  background-color: rgba(0, 0, 0, 0.125);
+}
+div.pushpin a.active span {
+  font-size: 1em;
+  font-weight: 700;
+}
+#index .adminNeed .row-title .checkboxThree {
+  margin: 11px 0;
+}
+span.color {
+  display: inline-block;
+  width: 30px;
+  padding: 3px;
+  border: 1px solid #CCC;
+}
+span.color.red {
+  background-color: #ff0000;
+}
+span.color.green {
+  background-color: #00ff00;
+}
+span.color.blue {
+  background-color: #0000ff;
+}
+span.color.qing {
+  background-color: #5de2dd;
+}
+span.color.pink {
+  background-color: pink;
+}
+span.color.yellow {
+  background-color: yellow;
+}
+span.color.orange {
+  background-color: orange;
+}
+#boardMsg {
+  width: 728px;
+}
+.ui-context-menu {
+  list-style: none;
+  position: absolute;
+  z-index: 9999;
+  padding: 5px 0;
+  min-width: 80px;
+  margin: 0;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.ui-context-menu .ui-context-menu-item {
+  margin: 0;
+  padding: 0;
+}
+.ui-context-menu .ui-context-menu-item a {
+  display: block;
+  padding: 0 10px;
+  white-space: nowrap;
+  text-decoration: none;
+}
+.ui-context-menu .ui-context-menu-item a:hover {
+  text-decoration: none;
+}
+.ui-context-menu .ui-context-menu-item .icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  vertical-align: sub;
+  border: 0;
+}
+.IRshow button {
+  min-width: 100px;
+  text-align: right;
+}
+.IRshow button span {
+  top: 3px;
+  font-weight: normal;
+}

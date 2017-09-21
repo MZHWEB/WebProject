@@ -1,0 +1,82 @@
+#help-button {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+  z-index: 3000;
+}
+#help-button img {
+  width: 40px;
+}
+#helpMune ul {
+  position: relative;
+}
+#helpMune ul li {
+  font-size: 1.4em;
+  cursor: pointer;
+}
+#helpMune ul li.active {
+  font-weight: 700;
+  color: darkorange;
+}
+#helpMune ul li#munebg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 28px;
+  width: 100%;
+  background-color: #9d9d9d;
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+  transition: 0.1s linear all;
+}
+#helpTxt {
+  border-left: 1px solid #e5e5e5;
+  max-height: 550px;
+  overflow: scroll;
+}
+#helpTxt h4 span {
+  color: darkorange;
+  margin-right: 10px;
+}
+#selectModal .modal-content {
+  background-color: #f1f1fe;
+}
+#selectModal .modal-content .modal-header {
+  background-color: #d6eff8;
+}
+#selectModal .modal-content .modal-body ul {
+  height: 400px;
+  overflow: auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+}
+#selectModal .modal-content .modal-body ul li {
+  padding: 4px 10px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+#selectModal .modal-content .modal-body ul li:nth-of-type(odd) {
+  background-color: #f9f9f9;
+}
+#selectModal .modal-content .modal-body ul li:hover {
+  background-color: #d6eff8;
+}
+#selectModal .modal-content .modal-body ul li.active {
+  background-color: #6ac5ff;
+}
+#selectModal .modal-content .modal-body .btn-edit {
+  text-align: center;
+  padding: 50px 0;
+}
+#selectModal .modal-content .modal-body .btn-edit div {
+  margin: 30px 0;
+  line-height: 45px;
+}
+#selectModal .modal-content .modal-body .btn-edit div button {
+  width: 36px;
+}
+#selectModal .modal-content .modal-body .text-center {
+  margin-top: 15px;
+}

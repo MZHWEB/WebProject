@@ -1,0 +1,45 @@
+.search-box {
+  position: relative;
+}
+.search-box .btn-group {
+  position: absolute;
+  left: -64%;
+  top: 0;
+}
+.search-box .btn-group .search-type {
+  width: 100px;
+  height: 34px;
+}
+.search-box .btn-group .btn-default {
+  height: 34px;
+}
+.search-box .btn-group > ul {
+  width: 144px;
+  border-bottom: 0;
+  border-left: 0;
+  position: absolute;
+  top: 100%;
+  left: -5px;
+  z-index: 30;
+  display: none;
+}
+.search-box .btn-group > ul > li {
+  border: 1px solid #ccc;
+  border-top: 0;
+  background-color: #fff;
+  margin-left: 0;
+  padding: 6px;
+  cursor: pointer;
+}
+.search-box .btn-group > ul > li:hover {
+  background-color: #ddd;
+}
+.search-box .search-icon {
+  position: absolute;
+  right: 12px;
+  top: 10px;
+  color: #cccccc;
+}
+.search-box .search-txt {
+  padding-right: 36px;
+}

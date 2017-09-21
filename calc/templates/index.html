@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>综合服务管理平台</title>
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/main.css">
+    <link rel="stylesheet" href="static/css/defult_logo.css">
+    <link rel="stylesheet" href="static/css/search.css">
+    <link rel="stylesheet" href="static/css/black.css">
+    <link rel="stylesheet" href="static/css/help.css">
+    <link rel="stylesheet" href="static/css/upcss.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .checkboxThree{
+            position:relative;
+            width:20px;
+            height:20px;
+            border:1px solid #333;
+            background-color: #fff;
+            z-index: 10;
+        }
+        .checkboxThree label{
+            display:block;
+            width:21px;
+            text-align:center;
+            color:#fff;
+        }
+        .checkboxThree label span{
+            font-size: 1em !important;
+        }
+        .checkboxThree input[type=checkbox]{
+            position:absolute;
+            top:0;
+            left:0;
+            margin:0;
+            width:21px;
+            height:21px;
+            filter:alpha(opacity=0);
+            -moz-opacity:0;
+            -khtml-opacity: 0;
+            opacity:0;
+            z-index: 30;
+        }
+        .checkboxThree.active{
+            background-color:#333;
+        }
+        body{
+            -moz-user-select: none;     /*火狐*/
+            -webkit-user-select: none;  /*webkit浏览器*/
+            -ms-user-select: none;      /*IE10*/
+            -khtml-user-select: none;   /*早期浏览器*/
+            user-select: none;          /*禁止选中*/
+        }
+        .line{margin-bottom:20px;}
+        /* 复制提示 */
+        .copy-tips{position:fixed;z-index:999;bottom:50%;left:50%;margin:0 0 -20px -80px;background-color:rgba(0, 0, 0, 0.2);filter:progid:DXImageTransform.Microsoft.Gradient(startColorstr=#30000000, endColorstr=#30000000);padding:6px;}
+        .copy-tips-wrap{padding:10px 20px;text-align:center;border:1px solid #F4D9A6;background-color:#FFFDEE;font-size:14px;}
+    </style>
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/jquery.zclip.min.js"></script>
+    <script src="static/js/upload2.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/jquery.contextMenu.min.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <style>
+        #user-modal{
+            margin-top: -350px;
+        }
+    </style>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="En">
+<div class="topheader">
+    <div class="logo pull-left"><b>logo志源云编译系统</b></div>
+    <div class="user pull-right text-right">
+        <div id="userD" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <span class="user-img"><img src="" alt="static/Images/d.png"></span>
+            <span><pre class="Chinese">你好，管理员</pre><pre class="English">Hello，管理员</pre></span>
+            <span class="glyphicon glyphicon-menu-down"></span>
+        </div>
+        <ul class="dropdown-menu" aria-labelledby="userD">
+            <li><a jump="rPwd"><span class="glyphicon glyphicon-lock"></span><pre class="Chinese">修改密码</pre><pre class="English">change password</pre></a></li>
+            <li><a jump="rPic"><span class="glyphicon glyphicon-picture"></span><pre class="Chinese">修改头像</pre><pre class="English">Portrait Editor</pre></a></li>
+            <li><a jump="rBgpic"><span class="glyphicon glyphicon-erase"></span><pre class="Chinese">切换皮肤</pre><pre class="English">Grey Crystal</pre></a></li>
+            <li><a jump="user"><span class="glyphicon glyphicon-user"></span><pre class="Chinese">账号</pre><pre class="English">account information</pre></a></li>
+            <li><a jump="exit"><span class="glyphicon glyphicon-log-out"></span><pre class="Chinese">退出</pre><pre class="English">login out</pre></a></li>
+        </ul>
+    </div>
+    <div class="pull-right">
+        <span id="select-language">切换到英文</span>
+    </div>
+</div>
+<div class="headerholder"></div>
+<div class="defaultBg"></div>
+
+<div class="zhezhao"></div>
+<div class="leftmenu pull-left">
+    <div class="goAdmin">
+        <div class="btn-group" role="group" aria-label="...">
+            <button type="button" class="btn btn-link active" id="umenu"><span class="glyphicon glyphicon-user"></span></button>
+        </div>
+    </div>
+    <div class="pushpin">
+        <a class="btn btn-xs"><span class="glyphicon glyphicon-pushpin"></span></a>
+    </div>
+    <ul id="menu">
+        <li>
+            <p><i class="glyphicon glyphicon-circle-arrow-right"></i><pre class="Chinese">项目管理</pre><pre class="English">PM(project management)</pre><span class="glyphicon glyphicon-chevron-down"></span></p>
+        </li>
+    </ul>
+</div>
+
+<div class="content active" id="index">
+
+</div>
+<div class="modal fade bs-example-modal-sm" tabindex="-1" id="project-modal" role="dialog" aria-labelledby="mySmallModalLabel">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title" id="mySmallModalLabel"><pre class="Chinese">新建项目</pre><pre class="English">New Project</pre></h4>
+            </div>
+            <div class="modal-body plate">
+                <div class="input-group">
+                    <input type="text" class="form-control" readonly placeholder="请选择" aria-describedby="basic-addon2" id="platename"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="input-group-addon" id="basic-addon2"  data-toggle="dropdown"><span class="glyphicon glyphicon-menu-down"></span></span>
+                    <ul class="dropdown-menu"  aria-labelledby="platename">
+                        <!--<li><a href="#">MV56_128PIN</a></li>-->
+                        <!--<li><a href="#">MV56_80PIN</a></li>-->
+                    </ul>
+                </div>
+                <div class="text-right">
+                    <button type="button" class="btn btn-sm btn-success" id="goProject"><pre class="Chinese">确定</pre><pre class="English">sure</pre></button>
+                    <button type="button" class="btn btn-sm btn-default" data-dismiss="modal"><pre class="Chinese">取消</pre><pre class="English">cancel</pre></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" tabindex="-1" id="alertMsg" role="dialog" aria-labelledby="alertTitle">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title" id="alertTitle">弹出框头部</h4>
+            </div>
+            <div class="modal-body" id="Msg">
+                响应消息
+            </div>
+            <div class="modal-footer">
+                <div class="text-center">
+                    <button type="button" class="btn btn-sm btn-success"><pre class="Chinese">确定</pre><pre class="English">sure</pre></button>
+                    <button type="button" class="btn btn-sm btn-default" data-dismiss="modal"><pre class="Chinese">取消</pre><pre class="English">cancel</pre></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="user-modal">
+    <span class="close-use glyphicon glyphicon-remove"></span>
+    <div id="u-load"></div>
+</div>
+<div id="list"></div>
+<div id="help-button">
+    <img src="static/Images/help.png" statu="open" alt="" >
+</div>
+<div class="modal fade bs-example-modal-lg" tabindex="-1" id="helpModel" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">帮助</h4>
+            </div>
+            <div class="modal-body">
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade bs-example-modal-lg" tabindex="-1" id="configtext" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myconfig"><pre class="Chinese">代码生成</pre><pre class="English">code generation</pre></h4>
+            </div>
+            <div class="modal-body">
+                <textarea id="config" style="width: 99%;height: 500px;margin: 0 auto;resize: none;"></textarea>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-success" id="copy-config"><pre class="Chinese">复制代码</pre><pre class="English">Copy</pre></button>
+                <button class="btn btn-default" data-dismiss="modal"><pre class="Chinese">关闭</pre><pre class="English">Close</pre></button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="listEdit">
+    <ul>
+        <!--<li>
+            <button class="btn btn-xs btn-default" type="button">
+            清空 <span class="badge">4</span>
+            </button>
+        </li>
+        <li><a href="" class="btn btn-sm btn-default"><span class="glyphicon glyphicon-save"></span></a></li>
+        <li><a href="" class="btn btn-sm btn-default"><span class="glyphicon glyphicon-trash"></span></a></li>
+        <li><a href="" class="btn btn-sm btn-link"><span class="glyphicon glyphicon-star-empty"></span></a></li>-->
+    </ul>
+</div>
+<script src="static/js/sha1.js"></script>
+<script src="static/js/main.js"></script>
+<script>
+    document.body.onselectstart = document.body.ondrag = function(){
+        return false;
+    };
+    $("body").on('click','div.checkboxThree',function(){
+        if($(this).find('input[type=checkbox]').is(':checked')){
+            $(this).addClass('active');
+        }else{
+            $(this).removeClass('active');
+        }
+    });
+
+//    $("body").on('click','label',function(e){
+//        if($(this).attr("for")){
+//            console.log($(this).attr("for"));
+//            $("#"+$(this).attr("for")).change().click();
+//        }else{
+//            $(this).find('input').change().click();
+//        }
+//    });
+</script>
+<!--[if lt IE 9]>
+<script >
+    //下载图片
+    $('body').on('mousedown','a[download]',function(e){
+        e.preventDefault();
+        var url = $(this).attr('download');
+        window.location='Download/?url='+url;
+    })
+</script>
+<![endif]-->
+</body>
+</html>

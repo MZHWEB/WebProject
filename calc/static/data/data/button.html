@@ -1,0 +1,97 @@
+<div class="content-title">
+    <button type="button" class="btn btn-default pull-left dropmenu " id="drop"><span class="glyphicon glyphicon-menu-hamburger drop" id="dropspan"></span></button>
+    <h3><pre class="Chinese">按键列表</pre><pre class="English">Keypad List</pre></h3>
+</div>
+<div class="content-body">
+    <div class="content-nav">
+        <div class="container">
+            <div>
+                <ul class="nav-box pull-left">
+                    <li class="focus"><pre class="Chinese">我的按键</pre><pre class="English">My Keypads</pre></li>
+                    <li><pre class="Chinese">常用按键</pre><pre class="English">Starred Keypads</pre></li>
+                    <li><pre class="Chinese">云端按键</pre><pre class="English">All Keypads</pre></li>
+                </ul>
+                <div class="pull-right">
+                    <ul class="nav navbar-nav">
+                        <li class="form-group search-box">
+                            <div class="btn-group" role="group" aria-label="...">
+                                <button type="button" class="btn btn-default search-type">屏幕参数</button>
+                                <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-triangle-bottom"></span></button>
+                            </div>
+                            <input type="text" class="form-control search-txt" placeholder="请输入要搜的内容">
+                            <span class="glyphicon glyphicon-search search-icon"></span>
+                        </li>
+                        <li class="btn-group">
+                            <button type="button" class="btn btn-default" id="sortMsg"><pre class="Chinese">默认的排序</pre><pre class="English">Default sort</pre></button>
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="caret"></span>
+                                <span class="sr-only">Toggle Dropdown</span>
+                            </button>
+                            <ul class="dropdown-menu" id="sort">
+                                <li><a href="#"><pre class="Chinese">按名字排序</pre><pre class="English">Name sort</pre></a></li>
+                                <li><a href="#"><pre class="Chinese">按时间排序</pre><pre class="English">Time sort</pre></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <button type="button" class="btn btn-success" alrt="button"><span class="glyphicon glyphicon-plus"></span><pre class="Chinese">新建按键</pre><pre class="English">New keypad</pre></button>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div>
+        </div>
+    </div>
+    <div class="content-table">
+        <div class="container">
+            <div class="panel panel-default">
+
+                <!-- Table -->
+                <table class="table table-striped table-bordered  table-condensed table-responsive">
+                    <thead>
+                        <tr>
+                            <th serch="id"><pre class="Chinese">按键编号</pre><pre class="English">ID</pre></th>
+                            <th serch="keypad_name"><pre class="Chinese">按键名</pre><pre class="English">Keypad Name</pre></th>
+                            <th serch="keypad_is_5key_mode"><pre class="Chinese">五键</pre><pre class="English">5Keys</pre></th>
+                            <th serch="keypad_k0"><pre class="Chinese">k0</pre><pre class="English">k0</pre></th>
+                            <th serch="keypad_k1"><pre class="Chinese">k1</pre><pre class="English">k1</pre></th>
+                            <th serch="keypad_k2"><pre class="Chinese">k2</pre><pre class="English">k2t</pre></th>
+                            <th serch="keypad_k3"><pre class="Chinese">k3</pre><pre class="English">k3</pre></th>
+                            <th serch="keypad_k4"><pre class="Chinese">k4</pre><pre class="English">k4</pre></th>
+                            <th serch="keypad_k5"><pre class="Chinese">k5</pre><pre class="English">k5</pre></th>
+                            <th serch="keypad_k6"><pre class="Chinese">k6</pre><pre class="English">k6</pre></th>
+                            <th serch="KeypadTime"><pre class="Chinese">创建时间</pre><pre class="English">Time</pre></th>
+                            <th id="author" serch="Author__comment" class="hide"><pre class="Chinese">工程师</pre><pre class="English">Author</pre></th>
+                            <th><pre class="Chinese">操作</pre><pre class="English">operation</pre></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <!--<tr>
+                        <td>001</td>
+                        <td>BD_ZVT_MV56RUU_P813F</td>
+                        <td>V400_1920x1080_SWP1</td>
+                        <td>英语</td>
+                        <td>ZY_00BF</td>
+                        <td>AGENCY</td>
+                        <td>checksum</td>
+                        <td>2017-04-15 16:17:47</td>
+                        <td><span class="label label-success">编译成功</span></td>
+                        <td>
+                            <a href="" class="btn btn-xs btn-default" data-toggle="tooltip" data-placement="bottom" title="复制配置"><span class="glyphicon glyphicon-plus"></span></a>
+                            <a href="" class="btn btn-xs btn-default"><span class="glyphicon glyphicon-save"></span></a>
+                            <a href="" class="btn btn-xs btn-default"><span class="glyphicon glyphicon-trash"></span></a>
+                            <a href="" class="btn btn-xs btn-link"><span class="glyphicon glyphicon-star-empty"></span></a>
+                        </td>
+                    </tr>-->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+    <div class="table-pager text-center">
+        <nav aria-label="Page container navigation">
+            <ul class="pagination">
+                
+            </ul>
+        </nav>
+    </div>
+</div>

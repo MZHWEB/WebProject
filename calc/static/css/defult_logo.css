@@ -1,0 +1,31 @@
+#d_logo {
+  position: absolute;
+  width: 488px;
+  bottom: -109%;
+  left: 274px;
+  padding: 5px;
+  padding-bottom: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  z-index: 110;
+}
+#d_logo img {
+  height: 100px;
+  border: 2px solid transparent;
+  vertical-align: top;
+  cursor: pointer;
+}
+#d_logo img:hover {
+  border-color: #90f;
+}
+#d_logo li {
+  float: left;
+  margin: 3px;
+  margin-bottom: 0;
+}
+#d_logo li p {
+  margin: 0;
+}
+label.input-group .form-control[readonly]:not(#duan) {
+  background-color: #fff;
+}

@@ -1,0 +1,34 @@
+{
+  "umenu": [
+    {
+      "name1": "项目列表",
+      "En":"Project List",
+      "url": "#index"
+    },
+    {
+      "name1": "屏幕参数",
+      "En":"Panel",
+      "url": "#PC"
+    },
+    {
+      "name1": "按键",
+      "En":"KeyPad",
+      "url": "#button"
+    },
+    {
+      "name1": "遥控器",
+      "En":"IR",
+      "url": "#remoto"
+    },
+    {
+      "name1": "图像效果",
+      "En":"PQ",
+      "url": "#PQ"
+    },
+    {
+      "name1": "LOGO",
+      "En":"LOGO",
+      "url": "#LOGO"
+    }
+  ]
+}

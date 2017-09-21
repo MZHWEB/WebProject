@@ -1,0 +1,1097 @@
+<div class="container pro-box">
+    <form action="" id="prolist" enctype="multipart/form-data"></form>
+    <div class="default">
+        <div class="row">
+            <div class="col-xs-1 col-sm-2"></div>
+            <div class="col-xs-11 col-sm-10">
+                <h4><pre class="Chinese">基本需求</pre><pre class="English">Basic demand</pre></h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1 col-sm-2"></div>
+            <div class="col-xs-3 col-sm-2 text-right"><span class="label-title"><span style="color:red;">*</span><pre class="Chinese">Mode(版型)</pre><pre class="English">Mode</pre></span></div>
+            <div class="col-xs-6 col-sm-4">
+                <label class="input-group" drop-down="1">
+                    <input form="prolist" type="text" id="board_type" name="board_type" class="form-control" readonly>
+                    <span class="glyphicon glyphicon-triangle-bottom down-img"></span>
+                </label>
+                <div class="yuLogo" id="boardMsg"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1 col-sm-2"></div>
+            <div class="col-xs-3 col-sm-2 text-right"><span class="label-title"><span style="color:red;">*</span><pre class="Chinese">制式</pre><pre class="English">Standard</pre></span></div>
+            <div class="col-xs-6 col-sm-4">
+                <label class="input-group" drop-down="1">
+                    <input form="prolist" type="text" id="tv_system" name="tv_system" value="PNL" class="form-control" readonly>
+                    <span class="glyphicon glyphicon-triangle-bottom down-img"></span>
+                </label>
+            </div>
+        </div>
+		<div class="row">
+            <div class="col-xs-1 col-sm-2"></div>
+            <div class="col-xs-3 col-sm-2 text-right"><span class="label-title"><span style="color:red;">*</span><pre class="Chinese">上电模式</pre><pre class="English">Power up mode</pre></span></div>
+            <div class="col-xs-6 col-sm-4">
+                <label class="input-group" drop-down="1">
+                    <input form="prolist" type="text" id="power_on_mode" name="power_on_mode" value="上电待机" class="form-control" readonly>
+                    <span class="glyphicon glyphicon-triangle-bottom down-img"></span>
+                </label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1 col-sm-2"></div>
+            <div class="col-xs-3 col-sm-2 text-right"><span class="label-title"><span style="color:red;">*</span><pre class="Chinese">语言</pre><pre class="English">Language</pre></span></div>
+            <div class="col-xs-6 col-sm-4">
+                <label class="input-group" drop-down="1">
+                    <input form="prolist" type="text" id="language" name="language" class="form-control" readonly>
+                    <span class="glyphicon glyphicon-triangle-bottom down-img"></span>
+                </label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1 col-sm-2"></div>
+            <div class="col-xs-3 col-sm-2 text-right"><span class="label-title"><span style="color:red;">*</span><pre class="Chinese">默认语言</pre><pre class="English">Default Language</pre></span></div>
+            <div class="col-xs-6 col-sm-4">
+                <label class="input-group" drop-down="1">
+                    <input form="prolist" type="text" id="default_language" name="default_language" class="form-control" readonly>
+                    <span class="glyphicon glyphicon-triangle-bottom down-img"></span>
+                </label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1 col-sm-2"></div>
+            <div class="col-xs-3 col-sm-2 text-right"><span class="label-title"><pre class="Chinese">上传LOGO</pre><pre class="English">Update LOGO</pre></span></div>
+            <div class="col-xs-6 col-sm-4">
+                <label class="input-group" drop-down="1">
+                    <input  form="prolist" class="logo-text form-control" type="text" id="logo_name" name="logo_name" readonly>
+                    <input type="text" style="display: none;" id="logo" name="logo" readonly>
+                    <label id="upbtn" class="input-group" upload="on" for="uplogo">
+                        <span class="glyphicon glyphicon-cloud-upload down-img btn btn-default"></span>
+                        <input id="uplogo" name="logo" type="file">
+                    </label>
+                </label>
+                <div class="yuLogo" id="LogoMsg"></div>
+            </div>
+            <div class="col-xs-3 col-sm-2">
+                <div class="checkboxThree pull-left active" title="是否开启LOGO显示">
+                    <label for="isOnlogo"><span class="glyphicon glyphicon-ok"></span></label>
+                    <input form="prolist" type="checkbox" checked value="1" id="isOnlogo" name="logo_enable" />
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1 col-sm-2"></div>
+            <div class="col-xs-3 col-sm-2 text-right"><span class="label-title"><span style="color:red;">*</span><pre class="Chinese">遥控器</pre><pre class="English">IR</pre></span></div>
+            <div class="col-xs-6 col-sm-4">
+                <label class="input-group" drop-down="1">
+                    <input type="text" id="frist_remote" name="frist_remote" class="form-control">
+                    <span class="glyphicon glyphicon-triangle-bottom down-img"></span>
+                </label>
+            </div>
+            <div class="col-xs-3 col-sm-2">
+                <button class="btn btn-default drop-alert" drop-alert="CloudIR"><pre class="Chinese">自定义遥控</pre><pre class="English">Custom IR</pre></button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1 col-sm-2"></div>
+            <div class="col-xs-3 col-sm-2 text-right"><span class="label-title"><pre class="Chinese">副遥控</pre><pre class="English">Second IR</pre></span></div>
+            <div class="col-xs-6 col-sm-4">
+                <label class="input-group" drop-down="1">
+                    <input type="text" name="second_remote" class="form-control" id="second_remote">
+                    <span class="glyphicon glyphicon-triangle-bottom down-img"></span>
+                </label>
+            </div>
+            <div class="col-xs-3 col-sm-2">
+                <button class="btn btn-default drop-alert" drop-alert="fu-remote"><pre class="Chinese">副遥控自定义</pre><pre class="English">Custom Second IR</pre></button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1 col-sm-2"></div>
+            <div class="col-xs-3 col-sm-2 text-right"><span class="label-title"><span style="color:red;">*</span><pre class="Chinese">按键</pre><pre class="English">Keypad</pre></span></div>
+            <div class="col-xs-6 col-sm-4">
+                <label class="input-group" drop-down="1">
+                    <input type="text" name="keypad_name" class="form-control" id="keypad_name">
+                    <span class="glyphicon glyphicon-triangle-bottom down-img"></span>
+                </label>
+            </div>
+            <div class="col-xs-3 col-sm-2">
+                <button class="btn btn-default drop-alert" drop-alert="CloudKeypad"><pre class="Chinese">按键自定义</pre><pre class="English">Custom Keypad</pre></button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1 col-sm-2"></div>
+            <div class="col-xs-3 col-sm-2 text-right"><span class="label-title"><span style="color:red;">*</span><pre class="Chinese">屏幕参数</pre><pre class="English">Panel</pre></span></div>
+            <div class="col-xs-6 col-sm-4">
+                <label class="input-group" drop-down="1">
+                    <input type="text" name="panel_name" class="form-control" id="panel_name">
+                    <span class="glyphicon glyphicon-triangle-bottom down-img"></span>
+                </label>
+            </div>
+            <div class="col-xs-3 col-sm-2">
+                <button class="btn btn-default drop-alert" drop-alert="CloudPanel"><pre class="Chinese">配屏自定义</pre><pre class="English">Custom Panel</pre></span></button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1 col-sm-2"></div>
+            <div class="col-xs-3 col-sm-2 text-right">
+            </div>
+            <div class="col-xs-3 col-sm-3">
+                <div class="checkboxThree pull-left active">
+                    <label for="mirro_panel"><span class="glyphicon glyphicon-ok"></span></label>
+                    <input form="prolist" type="checkbox" checked value="1" id="mirro_panel" name="mirro_panel" />
+                </div>
+                <span class="label-title">&nbsp;&nbsp;<pre class="Chinese">倒屏</pre><pre class="English">Mirror</pre></span>
+            </div>
+        </div>
+    </div>
+    <div class="picture">
+        <div class="row">
+            <div class="col-xs-1 col-sm-2"></div>
+            <div class="col-xs-11 col-sm-10">
+                <h4><pre class="Chinese">图像效果</pre><pre class="English">Image effects</pre></h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1 col-sm-2"></div>
+            <div class="col-xs-3 col-sm-2 text-right"><span class="label-title"><span style="color:red;">*</span>PQ</span></div>
+            <div class="col-xs-6 col-sm-4">
+                <label class="input-group" drop-down="1">
+                    <input type="text" name="pq_name" class="form-control" id="pq_name">
+                    <span class="glyphicon glyphicon-triangle-bottom down-img"></span>
+                </label>
+            </div>
+            <div class="col-xs-3 col-sm-2">
+                <button class="btn btn-default drop-alert" drop-alert="CloudPQ"><pre class="Chinese">PQ自定义</pre><pre class="English">Custom PQ</pre></button>
+            </div>
+        </div>
+    </div>
+    <div class="rarely">
+        <div class="row">
+            <div class="col-xs-1 col-sm-2"></div>
+            <div class="col-xs-11 col-sm-10">
+                <h4><pre class="Chinese">可选需求</pre><pre class="English">Optional requirements</pre></h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1 col-sm-2"></div>
+            <div class="col-xs-3 col-sm-2 text-right"><span class="label-title"><pre class="Chinese">背光默认值</pre><pre class="English">Backlight defaults</pre></span></div>
+            <div class="col-xs-6 col-sm-4">
+                <label class="input-group">
+                    <input type="text" form="prolist" name="default_backlight" class="form-control" id="default_backlight" value="100">
+                </label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1 col-sm-2"></div>
+            <div class="col-xs-3 col-sm-2 text-right">
+            </div>
+            <div class="col-xs-3 col-sm-3">
+                <div class="checkboxThree pull-left active">
+                    <label for="no_signal_blue"><span class="glyphicon glyphicon-ok"></span></label>
+                    <input form="prolist" type="checkbox" checked value="1" id="no_signal_blue" name="no_signal_blue" />
+                </div>
+                <span class="label-title">&nbsp;&nbsp;<pre class="Chinese">无信号蓝屏</pre><pre class="English">Blue screen without signal</pre></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1 col-sm-2"></div>
+            <div class="col-xs-3 col-sm-2 text-right">
+            </div>
+            <div class="col-xs-3 col-sm-3">
+                <div class="checkboxThree pull-left active">
+                    <label for="free_panel"><span class="glyphicon glyphicon-ok"></span></label>
+                    <input form="prolist" type="checkbox" checked value="1" id="free_panel" name="free_panel" />
+                </div>
+                <span class="label-title">&nbsp;&nbsp;<pre class="Chinese">切换镜像</pre><pre class="English">FREEZE SCREEN</pre></span>
+            </div>
+        </div>
+    </div>
+    <div class="adminNeed">
+        <!--<div class="row row-title">
+            <div class="col-xs-1 col-sm-2"></div>
+            <div class="col-xs-3 col-sm-2">
+                <h4><pre class="Chinese">特殊需求</pre><pre class="English">Special needs</pre></h4>
+            </div>
+            <div class="col-xs-3 col-sm-2">
+                <div class="checkboxThree pull-left" id="showCheck">
+                    <label for="showCheckbox"><span class="glyphicon glyphicon-ok"></span></label>
+                    <input type="checkbox" value="1" id="showCheckbox"/>
+                </div>
+            </div>
+        </div>-->
+    </div>
+    <div class="row">
+        <div class="text-center">
+            <button id="pro_sub" type="button" class="btn btn-success col-xs- btn-sm"><pre class="Chinese">提交</pre><pre class="English">Submit</pre></button>
+        </div>
+    </div>
+</div>
+<div class="custom-bg"></div>
+<div class="custom" style="display: block">
+    <div id="CloudIR" style="display: none">
+        <div class="text-center custom-title">
+            <h5><pre class="Chinese">自定义遥控</pre><pre class="English">Custom IR</pre></h5>
+        </div>
+        <form action="" id="remote1"></form>
+        <div class="custom-content">
+            <div>
+                <label class="my-col-6"><span><span class="Chinese">遥控器名称</span><span class="English">IR Name</span></span><input type="text" name="remote_name" placeholder="输入遥控名" form="remote1"></label>
+            </div>
+            <div>
+                <label class="my-col-4"><span><span class="Chinese">头码</span><span class="English">Head Code</span></span><input type="text" name="remote_head_code" maxlength="4" form="remote1"></label>
+                <label class="my-col-4"><span><span class="Chinese">头码时间</span><span class="English">Head Code Time</span></span><input type="text" name="remote_header_code_time" value="9000" maxlength="4" form="remote1"></label>
+            </div>
+            <div>
+                <label class="my-col-4"><span>开关机(power)</span><input type="text" name="remote_power" maxlength="2" form="remote1"></label>
+                <label class="my-col-4"></label>
+                <label class="my-col-4"><span>静音(MUTE)</span><input type="text" name="remote_mute" maxlength="2" form="remote1"></label>
+            </div>
+            <div>
+                <label class="my-col-4"><span>NUM_1</span><input type="text" name="remote_num_1" maxlength="2" form="remote1"></label>
+                <label class="my-col-4"><span>NUM_2</span><input type="text" name="remote_num_2" maxlength="2" form="remote1"></label>
+                <label class="my-col-4"><span>NUM_3</span><input type="text" name="remote_num_3" maxlength="2" form="remote1"></label>
+            </div>
+            <div>
+                <label class="my-col-4"><span>NUM_4</span><input type="text" name="remote_num_4" maxlength="2" form="remote1"></label>
+                <label class="my-col-4"><span>NUM_5</span><input type="text" name="remote_num_5" maxlength="2" form="remote1"></label>
+                <label class="my-col-4"><span>NUM_6</span><input type="text" name="remote_num_6" maxlength="2" form="remote1"></label>
+            </div>
+            <div>
+                <label class="my-col-4"><span>NUM_7</span><input type="text" name="remote_num_7" maxlength="2" form="remote1"></label>
+                <label class="my-col-4"><span>NUM_8</span><input type="text" name="remote_num_8" maxlength="2" form="remote1"></label>
+                <label class="my-col-4"><span>NUM_9</span><input type="text" name="remote_num_9" maxlength="2" form="remote1"></label>
+            </div>
+            <div>
+                <label class="my-col-4"><span>-/--(DASH)</span><input type="text" name="remote_dash" maxlength="2" form="remote1"></label>
+                <label class="my-col-4"><span>NUM_0</span><input type="text" name="remote_num_0" maxlength="2" form="remote1"></label>
+                <label class="my-col-4"><span>回看(RETURN)</span><input type="text" name="remote_channel_return" maxlength="2" form="remote1"></label>
+            </div>
+            <div>
+                <label class="my-col-4"><span>睡眠(SLEEP)</span><input type="text" name="remote_sleep" maxlength="2" form="remote1"></label>
+                <label class="my-col-4"><span>VGA(PC)</span><input type="text" name="remote_pc" maxlength="2" form="remote1"></label>
+                <label class="my-col-4"><span>HDMI1(高清)</span><input type="text" name="remote_hdmi" maxlength="2" form="remote1"></label>
+            </div>
+            <div>
+                <label class="my-col-4"><span>音量(volume)+</span><input type="text" name="remote_volume_plus" maxlength="2" form="remote1"></label>
+                <label class="my-col-4"><span>通道(INPUT SOURCE)</span><input type="text" name="remote_input_source" maxlength="2" form="remote1"></label>
+                <label class="my-col-4"><span>频道(channel)+</span><input type="text" name="remote_channel_plus" maxlength="2" form="remote1"></label>
+            </div>
+            <div>
+                <label class="my-col-4"><span>音量(volume)-</span><input type="text" name="remote_volume_minus" maxlength="2" form="remote1"></label>
+                <label class="my-col-4"><span>缩放(ZOOM)</span><input type="text" name="remote_zoom" maxlength="2" form="remote1"></label>
+                <label class="my-col-4"><span>频道(channel)-</span><input type="text" name="remote_channel_minus" maxlength="2" form="remote1"></label>
+            </div>
+            <div>
+                <label class="my-col-4"><span>自动(Auto)</span><input type="text" name="remote_autoadjust" maxlength="2" form="remote1"></label>
+                <label class="my-col-4"><span>上(UP)</span><input type="text" name="remote_up" maxlength="2" form="remote1"></label>
+                <label class="my-col-4"><span>屏显(INFO)</span><input type="text" name="remote_info" maxlength="2" form="remote1"></label>
+            </div>
+            <div>
+                <label class="my-col-4"><span>左(LEFT)</span><input type="text" name="remote_left" maxlength="2" form="remote1"></label>
+                <label class="my-col-4"><span>确认(SELECT)</span><input type="text" name="remote_select" maxlength="2" form="remote1"></label>
+                <label class="my-col-4"><span>右(RIGHT)</span><input type="text" name="remote_right" maxlength="2" form="remote1"></label>
+            </div>
+            <div>
+                <label class="my-col-4"><span>菜单(MENU)</span><input type="text" name="remote_menu" maxlength="2" form="remote1"></label>
+                <label class="my-col-4"><span>下(DOWN)</span><input type="text" name="remote_down" maxlength="2" form="remote1"></label>
+                <label class="my-col-4"><span>退出(EXIT)</span><input type="text" name="remote_exit" maxlength="2" form="remote1"></label>
+            </div>
+            <div>
+                <label class="my-col-3"><span>上一首(PREVIOUS)</span><input type="text" name="remote_previous" maxlength="2" form="remote1"></label>
+                <label class="my-col-3"><span>下一首(NEXT)</span><input type="text" name="remote_next" maxlength="2" form="remote1"></label>
+                <label class="my-col-3"><span>快进(FORWARD)</span><input type="text" name="remote_forward" maxlength="2" form="remote1"></label>
+                <label class="my-col-3"><span>快退(BACKWARD)</span><input type="text" name="remote_backward" maxlength="2" form="remote1"></label>
+            </div>
+            <div>
+                <label class="my-col-3"><span>图像(PICTURE)</span><input type="text" name="remote_pic" maxlength="2" form="remote1"></label>
+                <label class="my-col-3"><span>声音(AUDIO)</span><input type="text" name="remote_audio" maxlength="2" form="remote1"></label>
+                <label class="my-col-3"><span>播放(PLAY)</span><input type="text" name="remote_play" maxlength="2" form="remote1"></label>
+                <label class="my-col-3"><span>停止(STOP)</span><input type="text" name="remote_stop" maxlength="2" form="remote1"></label>
+            </div>
+            <div>
+                <label class="my-col-3"><span>红(RED)</span><input type="text" name="remote_red" maxlength="2" form="remote1"></label>
+                <label class="my-col-3"><span>黄(YELLOW)</span><input type="text" name="remote_yellow" maxlength="2" form="remote1"></label>
+                <label class="my-col-3"><span>蓝(BULE)</span><input type="text" name="remote_blue" maxlength="2" form="remote1"></label>
+                <label class="my-col-3"><span>绿(GREEN)</span><input type="text" name="remote_green" maxlength="2" form="remote1"></label>
+            </div>
+            <div class="IRshow">
+                <button show="fuyong" shows="0"><pre class="Chinese">复用遥控</pre><pre class="English">Multiplex IR</pre> <span class="glyphicon glyphicon-chevron-down"></span></button>
+            </div>
+            <div class="fuyong" style="display: none">
+                <div>
+                    <label class="my-col-3"><span>复用红(RED)</span><input type="text" name="remote_combine_red" maxlength="2" form="remote1"></label>
+                    <label class="my-col-3"><span>复用黄(YELLOW)</span><input type="text" name="remote_combine_yellow" maxlength="2" form="remote1"></label>
+                    <label class="my-col-3"><span>复用蓝(BULE)</span><input type="text" name="remote_combine_blue" maxlength="2" form="remote1"></label>
+                    <label class="my-col-3"><span>复用绿(GREEN)</span><input type="text" name="remote_combine_green" maxlength="2" form="remote1"></label>
+                </div>
+                <div>
+                    <label class="my-col-3">
+                        <div class="checkboxThree pull-left">
+                            <label for="remote_channel_use_as_updown"><span class="glyphicon glyphicon-ok"></span></label>
+                            <input type="checkbox" value="1" id="remote_channel_use_as_updown" name="remote_channel_use_as_updown" form="remote1"/>
+                        </div>
+                        <span><pre class="Chinese">复用频道</pre><pre class="English">Multiplex channel</pre></span>
+                    </label>
+                    <label class="my-col-3">
+                        <div class="checkboxThree pull-left">
+                            <label for="remote_volume_use_as_leftright"><span class="glyphicon glyphicon-ok"></span></label>
+                            <input type="checkbox" value="1" id="remote_volume_use_as_leftright" name="remote_volume_use_as_leftright" form="remote1"/>
+                        </div>
+                        <span><pre class="Chinese">复用音量</pre><pre class="English">Multiplex volume</pre></span>
+                    </label>
+                </div>
+            </div>
+            <div class="IRshow">
+                <button show="unUser" shows="0"><pre class="Chinese">不常用遥控</pre><pre class="English">Not commonly used IR</pre> <span class="glyphicon glyphicon-chevron-down"></span></button>
+            </div>
+            <div class="unUser" style="display: none">
+                <div>
+                    <label class="my-col-3"><span>AB</span><input type="text" name="remote_ab" maxlength="2" form="remote1"></label>
+                    <label class="my-col-3"><span>自动调整(ADJUST)</span><input type="text" name="remote_adjust" maxlength="2" form="remote1"></label>
+                    <label class="my-col-3"><span>老化(AGING)</span><input type="text" name="remote_aging" maxlength="2" form="remote1"></label>
+                    <label class="my-col-3"><span>AUDIO TRACK</span><input type="text" name="remote_audio_track" maxlength="2" form="remote1"></label>
+                </div>
+                <div>
+                    <label class="my-col-3"><span>视频(AV1)</span><input type="text" name="remote_av" maxlength="2" form="remote1"></label>
+                    <label class="my-col-3"><span>AV2</span><input type="text" name="remote_av1" maxlength="2" form="remote1"></label>
+                    <label class="my-col-3"><span>AV3</span><input type="text" name="remote_av2" maxlength="2" form="remote1"></label>
+                    <label class="my-col-3"><span>CC</span><input type="text" name="remote_cc" maxlength="2" form="remote1"></label>
+                </div>
+                <div>
+                    <label class="my-col-3"><span>喜爱列表(CHANNEL FAV LIST)</span><input type="text" name="remote_channel_fav_list" maxlength="2" form="remote1"></label>
+                    <label class="my-col-3"><span>CHANNE FAV PLUS</span><input type="text" name="remote_channel_fav_plus" maxlength="2" form="remote1"></label>
+                    <label class="my-col-3"><span>CHANNEL FAV MINUS</span><input type="text" name="remote_channel_fav_minus" maxlength="2" form="remote1"></label>
+                    <label class="my-col-3"><span>节目表(CHANNEL LIST)</span><input type="text" name="remote_channel_list" maxlength="2" form="remote1"></label>
+                </div>
+                <div>
+                    <label class="my-col-3"><span>CLOCK</span><input type="text" name="remote_clock" maxlength="2" form="remote1"></label>
+                    <label class="my-col-3"><span>COMBINE KEY</span><input type="text" name="remote_combine_key" maxlength="2" form="remote1"></label>
+                    <label class="my-col-3"><span>分量(COMPONENT)</span><input type="text" name="remote_component" maxlength="2" form="remote1"></label>
+                    <label class="my-col-3"><span>DMP</span><input type="text" name="remote_dmp" maxlength="2" form="remote1"></label>
+                </div>
+                <div>
+                    <label class="my-col-3"><span>多媒体(DMP PORT)</span><input type="text" name="remote_Dmp_Port" maxlength="2" form="remote1"></label>
+                    <label class="my-col-3"><span>FACTORY RESTE</span><input type="text" name="remote_factory_reste" maxlength="2" form="remote1"></label>
+                    <label class="my-col-3"><span>EPG</span><input type="text" name="remote_epg" maxlength="2" form="remote1"></label>
+                    <label class="my-col-3"><span>镜像(FREEZE)</span><input type="text" name="remote_freeze" maxlength="2" form="remote1"></label>
+                </div>
+                <div>
+                    <label class="my-col-3"><span>GOTO</span><input type="text" name="remote_goto" maxlength="2" form="remote1"></label>
+                    <label class="my-col-3"><span>HDMI1</span><input type="text" name="remote_hdmi1" maxlength="2" form="remote1"></label>
+                    <label class="my-col-3"><span>HDMI2</span><input type="text" name="remote_hdmi2" maxlength="2" form="remote1"></label>
+                    <label class="my-col-3"><span>HDMI3</span><input type="text" name="remote_hdmi3" maxlength="2" form="remote1"></label>
+                </div>
+                <div>
+                    <label class="my-col-3"><span>HOLD</span><input type="text" name="remote_hold" maxlength="2" form="remote1"></label>
+                    <label class="my-col-3"><span>INDEX</span><input type="text" name="remote_index" maxlength="2" form="remote1"></label>
+                    <label class="my-col-3"><span>KEY DISABLE KEYPAD</span><input type="text" name="remote_key_disable_keypad" maxlength="2" form="remote1"></label>
+                    <label class="my-col-3"><span>循环(LOOP)</span><input type="text" name="remote_loop" maxlength="2" form="remote1"></label>
+                </div>
+                <div>
+                    <label class="my-col-3"><span>MIX</span><input type="text" name="remote_mix" maxlength="2" form="remote1"></label>
+                    <label class="my-col-3"><span>丽音(MTS)</span><input type="text" name="remote_mts" maxlength="2" form="remote1"></label>
+                    <label class="my-col-3"><span>音乐(MUSIC)</span><input type="text" name="remote_music" maxlength="2" form="remote1"></label>
+                    <label class="my-col-3"><span>PAGE UP</span><input type="text" name="remote_page_up" maxlength="2" form="remote1"></label>
+                </div>
+                <div>
+                    <label class="my-col-3"><span>PAGE DOWN</span><input type="text" name="remote_page_down" maxlength="2" form="remote1"></label>
+                    <label class="my-col-3"><span>暂停(PAUSE)</span><input type="text" name="remote_pause" maxlength="2" form="remote1"></label>
+                    <label class="my-col-3"><span>播放列表(PLAYLIST)</span><input type="text" name="remote_playlist" maxlength="2" form="remote1"></label>
+                    <label class="my-col-3"><span>刻录(RECORD)</span><input type="text" name="remote_record" maxlength="2" form="remote1"></label>
+                </div>
+                <div>
+                    <label class="my-col-3"><span>REVEAL</span><input type="text" name="remote_reveal" maxlength="2" form="remote1"></label>
+                    <label class="my-col-3"><span>ROTATE ANGLE</span><input type="text" name="remote_rotate_angle" maxlength="2" form="remote1"></label>
+                    <label class="my-col-3"><span>SCART1</span><input type="text" name="remote_scart" maxlength="2" form="remote1"></label>
+                    <label class="my-col-3"><span>SEARCH CHANNEL</span><input type="text" name="remote_search_channel" maxlength="2" form="remote1"></label>
+                </div>
+                <div>
+                    <label class="my-col-3"><span>SIZE</span><input type="text" name="remote_size" maxlength="2" form="remote1"></label>
+                    <label class="my-col-3"><span>慢放(SLOW)</span><input type="text" name="remote_slow" maxlength="2" form="remote1"></label>
+                    <label class="my-col-3"><span>STEP</span><input type="text" name="remote_step" maxlength="2" form="remote1"></label>
+                    <label class="my-col-3"><span>SUBPAGE</span><input type="text" name="remote_subpage" maxlength="2" form="remote1"></label>
+                </div>
+                <div>
+                    <label class="my-col-3"><span>字幕(SUBTITLE)</span><input type="text" name="remote_subtitle" maxlength="2" form="remote1"></label>
+                    <label class="my-col-3"><span>SV</span><input type="text" name="remote_sv" maxlength="2" form="remote1"></label>
+                    <label class="my-col-3"><span>TTX MODE</span><input type="text" name="remote_ttx_mode" maxlength="2" form="remote1"></label>
+                    <label class="my-col-3"><span>TTX</span><input type="text" name="remote_ttx" maxlength="2" form="remote1"></label>
+                </div>
+                <div>
+                    <label class="my-col-3"><span>电视(TV)</span><input type="text" name="remote_tv" maxlength="2" form="remote1"></label>
+                    <label class="my-col-3"><span>TV INPUT</span><input type="text" name="remote_tv_input" maxlength="2" form="remote1"></label>
+                    <label class="my-col-3"><span>TV RADIO</span><input type="text" name="remote_tv_radio" maxlength="2" form="remote1"></label>
+                    <label class="my-col-3"><span>UPDATE</span><input type="text" name="remote_update" maxlength="2" form="remote1"></label>
+                </div>
+                <div>
+                    <label class="my-col-3"><span>放大(ZOOM IN)</span><input type="text" name="remote_zoomin" maxlength="2" form="remote1"></label>
+                    <label class="my-col-3"><span>缩小(ZOOM OUT)</span><input type="text" name="remote_zommout" maxlength="2" form="remote1"></label>
+                </div>
+            </div>
+        </div>
+        <div class="text-center custom-btn">
+            <button class="btn btn-success"><pre class="Chinese">保存到配置</pre><pre class="English">Save to configuration</pre></button>
+        </div>
+    </div>
+    <div id="fu-remote" style="display: none">
+        <div class="text-center custom-title">
+            <h5><pre class="Chinese">副遥控自定义</pre><pre class="English">Custom Second IR</pre></h5>
+        </div>
+        <form action="" id="remote2"></form>
+        <div class="custom-content">
+            <div>
+                <label class="my-col-6"><span><span class="Chinese">遥控器名称</span><span class="English">IR Name</span></span><input type="text" name="remote_name" placeholder="输入遥控名" form="remote2"></label>
+            </div>
+            <div>
+                <label class="my-col-4"><span><span class="Chinese">头码</span><span class="English">head code</span></span><input type="text" name="remote_head_code" maxlength="4" form="remote2"></label>
+                <label class="my-col-4"><span><span class="Chinese">头码时间</span><span class="English">head code time</span></span><input type="text" name="remote_header_code_time" value="9000" maxlength="4" form="remote2"></label>
+            </div>
+            <div>
+                <label class="my-col-4"><span>开关机(power)</span><input type="text" name="remote_power" maxlength="2" form="remote2"></label>
+                <label class="my-col-4"></label>
+                <label class="my-col-4"><span>静音(MUTE)</span><input type="text" name="remote_mute" maxlength="2" form="remote2"></label>
+            </div>
+            <div>
+                <label class="my-col-4"><span>NUM_1</span><input type="text" name="remote_num_1" maxlength="2" form="remote2"></label>
+                <label class="my-col-4"><span>NUM_2</span><input type="text" name="remote_num_2" maxlength="2" form="remote2"></label>
+                <label class="my-col-4"><span>NUM_3</span><input type="text" name="remote_num_3" maxlength="2" form="remote2"></label>
+            </div>
+            <div>
+                <label class="my-col-4"><span>NUM_4</span><input type="text" name="remote_num_4" maxlength="2" form="remote2"></label>
+                <label class="my-col-4"><span>NUM_5</span><input type="text" name="remote_num_5" maxlength="2" form="remote2"></label>
+                <label class="my-col-4"><span>NUM_6</span><input type="text" name="remote_num_6" maxlength="2" form="remote2"></label>
+            </div>
+            <div>
+                <label class="my-col-4"><span>NUM_7</span><input type="text" name="remote_num_7" maxlength="2" form="remote2"></label>
+                <label class="my-col-4"><span>NUM_8</span><input type="text" name="remote_num_8" maxlength="2" form="remote2"></label>
+                <label class="my-col-4"><span>NUM_9</span><input type="text" name="remote_num_9" maxlength="2" form="remote2"></label>
+            </div>
+            <div>
+                <label class="my-col-4"><span>-/--(DASH)</span><input type="text" name="remote_dash" maxlength="2" form="remote2"></label>
+                <label class="my-col-4"><span>NUM_0</span><input type="text" name="remote_num_0" maxlength="2" form="remote2"></label>
+                <label class="my-col-4"><span>回看(RETURN)</span><input type="text" name="remote_channel_return" maxlength="2" form="remote2"></label>
+            </div>
+            <div>
+                <label class="my-col-4"><span>睡眠(SLEEP)</span><input type="text" name="remote_sleep" maxlength="2" form="remote2"></label>
+                <label class="my-col-4"><span>VGA(PC)</span><input type="text" name="remote_pc" maxlength="2" form="remote2"></label>
+                <label class="my-col-4"><span>HDMI1(高清)</span><input type="text" name="remote_hdmi" maxlength="2" form="remote2"></label>
+            </div>
+            <div>
+                <label class="my-col-4"><span>音量(volume)+</span><input type="text" name="remote_volume_plus" maxlength="2" form="remote2"></label>
+                <label class="my-col-4"><span>通道(INPUT SOURCE)</span><input type="text" name="remote_input_source" maxlength="2" form="remote2"></label>
+                <label class="my-col-4"><span>频道(channel)+</span><input type="text" name="remote_channel_plus" maxlength="2" form="remote2"></label>
+            </div>
+            <div>
+                <label class="my-col-4"><span>音量(volume)-</span><input type="text" name="remote_volume_minus" maxlength="2" form="remote2"></label>
+                <label class="my-col-4"><span>缩放(ZOOM)</span><input type="text" name="remote_zoom" maxlength="2" form="remote2"></label>
+                <label class="my-col-4"><span>频道(channel)-</span><input type="text" name="remote_channel_minus" maxlength="2" form="remote2"></label>
+            </div>
+            <div>
+                <label class="my-col-4"><span>自动(Auto)</span><input type="text" name="remote_autoadjust" maxlength="2" form="remote2"></label>
+                <label class="my-col-4"><span>上(UP)</span><input type="text" name="remote_up" maxlength="2" form="remote2"></label>
+                <label class="my-col-4"><span>屏显(INFO)</span><input type="text" name="remote_info" maxlength="2" form="remote2"></label>
+            </div>
+            <div>
+                <label class="my-col-4"><span>左(LEFT)</span><input type="text" name="remote_left" maxlength="2" form="remote2"></label>
+                <label class="my-col-4"><span>确认(SELECT)</span><input type="text" name="remote_select" maxlength="2" form="remote2"></label>
+                <label class="my-col-4"><span>右(RIGHT)</span><input type="text" name="remote_right" maxlength="2" form="remote2"></label>
+            </div>
+            <div>
+                <label class="my-col-4"><span>菜单(MENU)</span><input type="text" name="remote_menu" maxlength="2" form="remote2"></label>
+                <label class="my-col-4"><span>下(DOWN)</span><input type="text" name="remote_down" maxlength="2" form="remote2"></label>
+                <label class="my-col-4"><span>退出(EXIT)</span><input type="text" name="remote_exit" maxlength="2" form="remote2"></label>
+            </div>
+            <div>
+                <label class="my-col-3"><span>上一首(PREVIOUS)</span><input type="text" name="remote_previous" maxlength="2" form="remote2"></label>
+                <label class="my-col-3"><span>下一首(NEXT)</span><input type="text" name="remote_next" maxlength="2" form="remote2"></label>
+                <label class="my-col-3"><span>快进(FORWARD)</span><input type="text" name="remote_forward" maxlength="2" form="remote2"></label>
+                <label class="my-col-3"><span>快退(BACKWARD)</span><input type="text" name="remote_backward" maxlength="2" form="remote2"></label>
+            </div>
+            <div>
+                <label class="my-col-3"><span>图像(PICTURE)</span><input type="text" name="remote_pic" maxlength="2" form="remote2"></label>
+                <label class="my-col-3"><span>声音(AUDIO)</span><input type="text" name="remote_audio" maxlength="2" form="remote2"></label>
+                <label class="my-col-3"><span>播放(PLAY)</span><input type="text" name="remote_play" maxlength="2" form="remote2"></label>
+                <label class="my-col-3"><span>停止(STOP)</span><input type="text" name="remote_stop" maxlength="2" form="remote2"></label>
+            </div>
+            <div>
+                <label class="my-col-3"><span>红(RED)</span><input type="text" name="remote_red" maxlength="2" form="remote2"></label>
+                <label class="my-col-3"><span>黄(YELLOW)</span><input type="text" name="remote_yellow" maxlength="2" form="remote2"></label>
+                <label class="my-col-3"><span>蓝(BULE)</span><input type="text" name="remote_blue" maxlength="2" form="remote2"></label>
+                <label class="my-col-3"><span>绿(GREEN)</span><input type="text" name="remote_green" maxlength="2" form="remote2"></label>
+            </div>
+            <div class="IRshow">
+                <button show="fuyong" shows="0"><pre class="Chinese">复用遥控</pre><pre class="English">Multiplex IR</pre> <span class="glyphicon glyphicon-chevron-down"></span></button>
+            </div>
+            <div class="fuyong" style="display: none">
+                <div>
+                    <label class="my-col-3"><span>复用红(RED)</span><input type="text" name="remote_combine_red" maxlength="2" form="remote2"></label>
+                    <label class="my-col-3"><span>复用黄(YELLOW)</span><input type="text" name="remote_combine_yellow" maxlength="2" form="remote2"></label>
+                    <label class="my-col-3"><span>复用蓝(BULE)</span><input type="text" name="remote_combine_blue" maxlength="2" form="remote2"></label>
+                    <label class="my-col-3"><span>复用绿(GREEN)</span><input type="text" name="remote_combine_green" maxlength="2" form="remote2"></label>
+                </div>
+                <div>
+                    <label class="my-col-3">
+                        <div class="checkboxThree pull-left">
+                            <label for="remote_channel_use_as_updown"><span class="glyphicon glyphicon-ok"></span></label>
+                            <input type="checkbox" value="1" id="remote_channel_use_as_updown" name="remote_channel_use_as_updown" form="remote2"/>
+                        </div>
+                        <span><pre class="Chinese">复用频道</pre><pre class="English">Multiplex channel</pre></span>
+                    </label>
+                    <label class="my-col-3">
+                        <div class="checkboxThree pull-left">
+                            <label for="remote_volume_use_as_leftright"><span class="glyphicon glyphicon-ok"></span></label>
+                            <input type="checkbox" value="1" id="remote_volume_use_as_leftright" name="remote_volume_use_as_leftright" form="remote2"/>
+                        </div>
+                        <span><pre class="Chinese">复用音量</pre><pre class="English">Multiplex volume</pre></span>
+                    </label>
+                </div>
+            </div>
+            <div class="IRshow">
+                <button show="unUser" shows="0"><pre class="Chinese">不常用遥控</pre><pre class="English">Not commonly used IR</pre> <span class="glyphicon glyphicon-chevron-down"></span></button>
+            </div>
+            <div class="unUser" style="display: none">
+                <div>
+                    <label class="my-col-3"><span>AB</span><input type="text" name="remote_ab" maxlength="2" form="remote2"></label>
+                    <label class="my-col-3"><span>自动调整(ADJUST)</span><input type="text" name="remote_adjust" maxlength="2" form="remote2"></label>
+                    <label class="my-col-3"><span>老化(AGING)</span><input type="text" name="remote_aging" maxlength="2" form="remote2"></label>
+                    <label class="my-col-3"><span>AUDIO TRACK</span><input type="text" name="remote_audio_track" maxlength="2" form="remote2"></label>
+                </div>
+                <div>
+                    <label class="my-col-3"><span>视频(AV1)</span><input type="text" name="remote_av" maxlength="2" form="remote2"></label>
+                    <label class="my-col-3"><span>AV2</span><input type="text" name="remote_av1" maxlength="2" form="remote2"></label>
+                    <label class="my-col-3"><span>AV3</span><input type="text" name="remote_av2" maxlength="2" form="remote2"></label>
+                    <label class="my-col-3"><span>CC</span><input type="text" name="remote_cc" maxlength="2" form="remote2"></label>
+                </div>
+                <div>
+                    <label class="my-col-3"><span>喜爱列表(CHANNEL FAV LIST)</span><input type="text" name="remote_channel_fav_list" maxlength="2" form="remote2"></label>
+                    <label class="my-col-3"><span>CHANNE FAV PLUS</span><input type="text" name="remote_channel_fav_plus" maxlength="2" form="remote2"></label>
+                    <label class="my-col-3"><span>CHANNEL FAV MINUS</span><input type="text" name="remote_channel_fav_minus" maxlength="2" form="remote2"></label>
+                    <label class="my-col-3"><span>节目表(CHANNEL LIST)</span><input type="text" name="remote_channel_list" maxlength="2" form="remote2"></label>
+                </div>
+                <div>
+                    <label class="my-col-3"><span>CLOCK</span><input type="text" name="remote_clock" maxlength="2" form="remote2"></label>
+                    <label class="my-col-3"><span>COMBINE KEY</span><input type="text" name="remote_combine_key" maxlength="2" form="remote2"></label>
+                    <label class="my-col-3"><span>分量(COMPONENT)</span><input type="text" name="remote_component" maxlength="2" form="remote2"></label>
+                    <label class="my-col-3"><span>DMP</span><input type="text" name="remote_dmp" maxlength="2" form="remote2"></label>
+                </div>
+                <div>
+                    <label class="my-col-3"><span>多媒体(DMP PORT)</span><input type="text" name="remote_Dmp_Port" maxlength="2" form="remote2"></label>
+                    <label class="my-col-3"><span>FACTORY RESTE</span><input type="text" name="remote_factory_reste" maxlength="2" form="remote2"></label>
+                    <label class="my-col-3"><span>EPG</span><input type="text" name="remote_epg" maxlength="2" form="remote2"></label>
+                    <label class="my-col-3"><span>镜像(FREEZE)</span><input type="text" name="remote_freeze" maxlength="2" form="remote2"></label>
+                </div>
+                <div>
+                    <label class="my-col-3"><span>GOTO</span><input type="text" name="remote_goto" maxlength="2" form="remote2"></label>
+                    <label class="my-col-3"><span>HDMI1</span><input type="text" name="remote_hdmi1" maxlength="2" form="remote2"></label>
+                    <label class="my-col-3"><span>HDMI2</span><input type="text" name="remote_hdmi2" maxlength="2" form="remote2"></label>
+                    <label class="my-col-3"><span>HDMI3</span><input type="text" name="remote_hdmi3" maxlength="2" form="remote2"></label>
+                </div>
+                <div>
+                    <label class="my-col-3"><span>HOLD</span><input type="text" name="remote_hold" maxlength="2" form="remote2"></label>
+                    <label class="my-col-3"><span>INDEX</span><input type="text" name="remote_index" maxlength="2" form="remote2"></label>
+                    <label class="my-col-3"><span>KEY DISABLE KEYPAD</span><input type="text" name="remote_key_disable_keypad" maxlength="2" form="remote2"></label>
+                    <label class="my-col-3"><span>循环(LOOP)</span><input type="text" name="remote_loop" maxlength="2" form="remote2"></label>
+                </div>
+                <div>
+                    <label class="my-col-3"><span>MIX</span><input type="text" name="remote_mix" maxlength="2" form="remote2"></label>
+                    <label class="my-col-3"><span>丽音(MTS)</span><input type="text" name="remote_mts" maxlength="2" form="remote2"></label>
+                    <label class="my-col-3"><span>音乐(MUSIC)</span><input type="text" name="remote_music" maxlength="2" form="remote2"></label>
+                    <label class="my-col-3"><span>PAGE UP</span><input type="text" name="remote_page_up" maxlength="2" form="remote2"></label>
+                </div>
+                <div>
+                    <label class="my-col-3"><span>PAGE DOWN</span><input type="text" name="remote_page_down" maxlength="2" form="remote2"></label>
+                    <label class="my-col-3"><span>暂停(PAUSE)</span><input type="text" name="remote_pause" maxlength="2" form="remote2"></label>
+                    <label class="my-col-3"><span>播放列表(PLAYLIST)</span><input type="text" name="remote_playlist" maxlength="2" form="remote2"></label>
+                    <label class="my-col-3"><span>刻录(RECORD)</span><input type="text" name="remote_record" maxlength="2" form="remote2"></label>
+                </div>
+                <div>
+                    <label class="my-col-3"><span>REVEAL</span><input type="text" name="remote_reveal" maxlength="2" form="remote2"></label>
+                    <label class="my-col-3"><span>ROTATE ANGLE</span><input type="text" name="remote_rotate_angle" maxlength="2" form="remote2"></label>
+                    <label class="my-col-3"><span>SCART1</span><input type="text" name="remote_scart" maxlength="2" form="remote2"></label>
+                    <label class="my-col-3"><span>SEARCH CHANNEL</span><input type="text" name="remote_search_channel" maxlength="2" form="remote2"></label>
+                </div>
+                <div>
+                    <label class="my-col-3"><span>SIZE</span><input type="text" name="remote_size" maxlength="2" form="remote2"></label>
+                    <label class="my-col-3"><span>慢放(SLOW)</span><input type="text" name="remote_slow" maxlength="2" form="remote2"></label>
+                    <label class="my-col-3"><span>STEP</span><input type="text" name="remote_step" maxlength="2" form="remote2"></label>
+                    <label class="my-col-3"><span>SUBPAGE</span><input type="text" name="remote_subpage" maxlength="2" form="remote2"></label>
+                </div>
+                <div>
+                    <label class="my-col-3"><span>字幕(SUBTITLE)</span><input type="text" name="remote_subtitle" maxlength="2" form="remote2"></label>
+                    <label class="my-col-3"><span>SV</span><input type="text" name="remote_sv" maxlength="2" form="remote2"></label>
+                    <label class="my-col-3"><span>TTX MODE</span><input type="text" name="remote_ttx_mode" maxlength="2" form="remote2"></label>
+                    <label class="my-col-3"><span>TTX</span><input type="text" name="remote_ttx" maxlength="2" form="remote2"></label>
+                </div>
+                <div>
+                    <label class="my-col-3"><span>电视(TV)</span><input type="text" name="remote_tv" maxlength="2" form="remote2"></label>
+                    <label class="my-col-3"><span>TV INPUT</span><input type="text" name="remote_tv_input" maxlength="2" form="remote2"></label>
+                    <label class="my-col-3"><span>TV RADIO</span><input type="text" name="remote_tv_radio" maxlength="2" form="remote2"></label>
+                    <label class="my-col-3"><span>UPDATE</span><input type="text" name="remote_update" maxlength="2" form="remote2"></label>
+                </div>
+                <div>
+                    <label class="my-col-3"><span>放大(ZOOM IN)</span><input type="text" name="remote_zoomin" maxlength="2" form="remote2"></label>
+                    <label class="my-col-3"><span>缩小(ZOOM OUT)</span><input type="text" name="remote_zommout" maxlength="2" form="remote2"></label>
+                </div>
+            </div>
+        </div>
+        <div class="text-center custom-btn">
+            <button class="btn btn-success"><pre class="Chinese">保存到配置</pre><pre class="English">Save to configuration</pre></button>
+        </div>
+    </div>
+    <div id="CloudKeypad" style="display: none">
+        <div class="text-center custom-title">
+            <h5><pre class="Chinese">按键自定义</pre><pre class="English">Custom Keypad</pre></h5>
+        </div>
+        <form id="Keypad"></form>
+        <div class="custom-content">
+            <div>
+                <label class="my-col-6"><span><span class="Chinese">按键名称</span><span class="English">Keypad Name</span></span><input type="text" name="keypad_name" placeholder="输入遥控名" form="Keypad"></label>
+                <label class="my-col-3">
+                    <div class="checkboxThree pull-left">
+                        <label for="five"><span class="glyphicon glyphicon-ok"></span></label>
+                        <input type="checkbox" value="1" id="five" name="keypad_is_5key_mode" form="Keypad"/>
+                    </div>
+                    <span><span class="Chinese">开启五键</span><span class="English">Open 5Keys</span></span>
+                </label>
+            </div>
+            <div class="text-center" id="keydown">
+                <span class="btn btn-default btn-xs">MENU</span>
+                <span class="btn btn-default btn-xs" kp="7">CH-</span>
+                <span class="btn btn-default btn-xs" kp="7">CH+</span>
+                <span class="btn btn-default btn-xs" kp="7">VOL-</span>
+                <span class="btn btn-default btn-xs" kp="7">VOL+</span>
+                <span class="btn btn-default btn-xs" kp="5" style="display: none">LEFT</span>
+                <span class="btn btn-default btn-xs" kp="5" style="display: none">RIGHT</span>
+                <span class="btn btn-default btn-xs">SOURCE</span>
+                <span class="btn btn-default btn-xs">POWER</span>
+            </div>
+            <div class="text-center">
+                <label class="my-sm-1">
+                    <div class="in"></div>
+                    <input type="text" name="keypad_k0" form="Keypad" class="hidden">
+                </label>
+                <label class="my-sm-1">
+                    <div class="in"></div>
+                    <input type="text" name="keypad_k1" form="Keypad" class="hidden">
+                </label>
+                <label class="my-sm-1">
+                    <div class="in"></div>
+                    <input type="text" name="keypad_k2" form="Keypad" class="hidden">
+                </label>
+                <label class="my-sm-1">
+                    <div class="in"></div>
+                    <input type="text" name="keypad_k3" form="Keypad" class="hidden">
+                </label>
+                <label class="my-sm-1">
+                    <div class="in"></div>
+                    <input type="text" name="keypad_k4" form="Keypad" class="hidden">
+                </label>
+                <label class="my-sm-1" kp="7">
+                    <div class="in"></div>
+                    <input type="text" name="keypad_k5" form="Keypad" class="hidden">
+                </label>
+                <label class="my-sm-1" kp="7">
+                    <div class="in"></div>
+                    <input type="text" name="keypad_k6" form="Keypad" class="hidden">
+                </label>
+            </div>
+            <div class="text-center">
+                <label class="my-sm-1">
+                    <span>k0</span>
+                </label>
+                <label class="my-sm-1">
+                    <span>k1</span>
+                </label>
+                <label class="my-sm-1">
+                    <span>k2</span>
+                </label>
+                <label class="my-sm-1">
+                    <span>k3</span>
+                </label>
+                <label class="my-sm-1">
+                    <span>k4</span>
+                </label>
+                <label class="my-sm-1" kp="7">
+                    <span>k5</span>
+                </label>
+                <label class="my-sm-1" kp="7">
+                    <span>k6</span>
+                </label>
+            </div>
+        </div>
+        <div class="text-center custom-btn">
+            <button class="btn btn-success"><pre class="Chinese">保存到配置</pre><pre class="English">Save to configuration</pre></button>
+        </div>
+    </div>
+    <div id="CloudPanel" style="display: none">
+        <div class="text-center custom-title">
+            <h5><pre class="Chinese">配屏自定义</pre><pre class="English">Custom Panel</pre></h5>
+        </div>
+        <form action="" id="Panel"></form>
+        <div class="custom-content">
+            <div>
+                <label class="my-col-6"><span><span class="Chinese">配屏名称</span><span class="English">Panel Name</span></span><input type="text" placeholder="输入配屏名" name="panel_name" form="Panel"></label>
+            </div>
+            <div>
+                <label class="my-col-3">
+                    <div class="checkboxThree pull-left">
+                        <label for="DUALPORT"><span class="glyphicon glyphicon-ok"></span></label>
+                        <input type="checkbox" value="1" id="DUALPORT" name="panel_dual_port" form="Panel"/>
+                    </div>
+                    <span>DUAL PORT</span>
+                </label>
+                <label class="my-col-3">
+                    <div class="checkboxThree pull-left">
+                        <label for="clock"><span class="glyphicon glyphicon-ok"></span></label>
+                        <input type="checkbox" value="1" id="clock" name="panel_double_clock" form="Panel"/>
+                    </div>
+                    <span>DOUBLE CLOCK</span>
+                </label>
+                <label class="my-col-3">
+                    <div class="checkboxThree pull-left">
+                        <label for="swap_port"><span class="glyphicon glyphicon-ok"></span></label>
+                        <input type="checkbox" value="1" id="swap_port" name="panel_swap_port" form="Panel"/>
+                    </div>
+                    <span>SWAP_PORT</span>
+                </label>
+                <label class="my-col-3">
+                    <div class="checkboxThree pull-left">
+                        <label for="odd_ml"><span class="glyphicon glyphicon-ok"></span></label>
+                        <input type="checkbox" value="1" id="odd_ml" name="panel_swap_odd_ml" form="Panel"/>
+                    </div>
+                    <span>SWAP ODD_ML</span>
+                </label>
+            </div>
+            <div>
+                <label class="my-col-3">
+                    <div class="checkboxThree pull-left">
+                        <label for="EVEN_ML"><span class="glyphicon glyphicon-ok"></span></label>
+                        <input type="checkbox" value="1" id="EVEN_ML" name="panel_swap_even_ml" form="Panel"/>
+                    </div>
+                    <span>SWAP EVEN_ML</span>
+                </label>
+                <label class="my-col-3">
+                    <div class="checkboxThree pull-left">
+                        <label for="ODD_RB"><span class="glyphicon glyphicon-ok"></span></label>
+                        <input type="checkbox" value="1" id="ODD_RB" name="panel_swap_odd_rb" form="Panel"/>
+                    </div>
+                    <span>SWAP ODD_RB</span>
+                </label>
+                <label class="my-col-3">
+                    <div class="checkboxThree pull-left">
+                        <label for="EVEN_RB"><span class="glyphicon glyphicon-ok"></span></label>
+                        <input type="checkbox" value="1" id="EVEN_RB" name="panel_swap_even_rb" form="Panel"/>
+                    </div>
+                    <span>SWAP EVEN_RB</span>
+                </label>
+                <label class="my-col-3">
+                    <div class="checkboxThree pull-left">
+                        <label for="ODD_RG"><span class="glyphicon glyphicon-ok"></span></label>
+                        <input type="checkbox" value="1" id="ODD_RG" name="panel_swap_odd_rg" form="Panel"/>
+                    </div>
+                    <span>SWAP ODD_RG</span>
+                </label>
+            </div>
+            <div>
+                <label class="my-col-3">
+                    <div class="checkboxThree pull-left">
+                        <label for="EVEN_RG"><span class="glyphicon glyphicon-ok"></span></label>
+                        <input type="checkbox" value="1" id="EVEN_RG" name="panel_swap_even_rg" form="Panel"/>
+                    </div>
+                    <span>SWAP EVEN_RG</span>
+                </label>
+                <label class="my-col-3">
+                    <div class="checkboxThree pull-left">
+                        <label for="ODD_GB"><span class="glyphicon glyphicon-ok"></span></label>
+                        <input type="checkbox" value="1" id="ODD_GB" name="panel_swap_odd_gb" form="Panel"/>
+                    </div>
+                    <span>SWAP ODD_GB</span>
+                </label>
+                <label class="my-col-3">
+                    <div class="checkboxThree pull-left">
+                        <label for="EVEN_GB"><span class="glyphicon glyphicon-ok"></span></label>
+                        <input type="checkbox" value="1" id="EVEN_GB" name="panel_swap_even_gb" form="Panel"/>
+                    </div>
+                    <span>SWAP EVEN_GB</span>
+                </label>
+            </div>
+            <div>
+                <label class="my-col-3">
+                    <div class="checkboxThree pull-left">
+                        <label for="heibai"><span class="glyphicon glyphicon-ok"></span></label>
+                        <input type="checkbox" value="1" id="heibai" name="enable_black_white_change" form="Panel"/>
+                    </div>
+                    <span>ENABLE BLACK WHITE</span>
+                </label>
+                <label class="my-col-3">
+                    <div class="checkboxThree pull-left">
+                        <label for="60HZ"><span class="glyphicon glyphicon-ok"></span></label>
+                        <input type="checkbox" value="1" id="60HZ" name="panel_enable_60hz" form="Panel"/>
+                    </div>
+                    <span>60HZ</span>
+                </label>
+            </div>
+            <div>
+                <label class="my-col-4"><span>MAP</span><input type="text" name="panel_map" value="16" form="Panel"></label>
+                <label class="my-col-4"><span>ON_TIMING1</span><input type="text" name="panel_on_timing1" form="Panel"></label>
+                <label class="my-col-4"><span>ON_TIMING2</span><input type="text" name="panel_on_timing2" form="Panel"></label>
+            </div>
+            <div>
+                <label class="my-col-4"><span>HSYNC WIDTH</span><input type="text" name="panel_hsync_width" form="Panel"></label>
+                <label class="my-col-4"><span>HSYNC BACK PORCH</span><input type="text" name="panel_hsync_back_porch" form="Panel"></label>
+                <label class="my-col-4"><span>VSYNC WIDTH</span><input type="text" name="panel_vsync_width" form="Panel"></label>
+            </div>
+            <div>
+                <label class="my-col-4"><span>VSYNC BACK PORCH</span><input type="text" name="panel_vsync_back_porch" form="Panel"></label>
+                <label class="my-col-4"><span>WIDTH DEFINE</span><input type="text" name="panel_width_define" form="Panel"></label>
+                <label class="my-col-4"><span>HEIGHT DEFINE</span><input type="text" name="panel_height_define" form="Panel"></label>
+            </div>
+            <div>
+                <label class="my-col-4"><span>MAX HTOTAL</span><input type="text" name="panel_max_htotal" form="Panel"></label>
+                <label class="my-col-4"><span>HTOTAL</span><input type="text" name="panel_htotal" form="Panel"></label>
+                <label class="my-col-4"><span>MIN HTOTAL</span><input type="text" name="panel_min_htotal" form="Panel"></label>
+            </div>
+            <div>
+                <label class="my-col-4"><span>MAX VTOTAL</span><input type="text" name="panel_max_vtotal" form="Panel"></label>
+                <label class="my-col-4"><span>VTOTAL</span><input type="text" name="panel_vtotal" form="Panel"></label>
+                <label class="my-col-4"><span>MIN VTOTAL</span><input type="text" name="panel_min_vtotal" form="Panel"></label>
+            </div>
+            <div class="row">
+                <div class="col-xs-3 col-sm-2 text-right">
+                    <label class="my-col-3"><span class="label-title">OUT TIMING MODE</span></label>
+                </div>
+                <div class="col-xs-6 col-sm-6">
+                    <label class="input-group" drop-down="1">
+                        <input form="Panel" type="text" name="panel_out_timing_mode" value="E_PNL_CHG_DCLK" val="E_PNL_CHG_DCLK|E_PNL_CHG_HTOTAL|E_PNL_CHG_VTOTAL" readonly  class="form-control">
+                        <span class="glyphicon glyphicon-triangle-bottom down-img"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="text-center custom-btn">
+            <button class="btn btn-success"><pre class="Chinese">保存到配置</pre><pre class="English">Save to configuration</pre></button>
+        </div>
+    </div>
+    <div id="CloudPQ" style="display: none">
+        <div class="text-center custom-title">
+            <h5><pre class="Chinese">PQ自定义</pre><pre class="English">Custom PQ</pre></h5>
+        </div>
+        <div class="custom-content">
+            <div>
+                <label class="my-col-6"><span><span class="Chinese">PQ名称</span><span class="English">PQ Name</span></span><input type="text" placeholder="输入PQ名" name="pq_name"></label>
+                <label class="my-col-6"><button class="btn btn-default btn-sm" id="copy-pq"><pre class="Chinese">复制到所有通道</pre><pre class="English">Copy to all</pre></button></label>
+            </div>
+            <ul>
+                <li class="active">VGA</li>
+                <li>ATV</li>
+                <li>AV</li>
+                <li>YPBPR</li>
+                <li>HDMI</li>
+                <li>DTV</li>
+                <li>DMP</li>
+                <li>DVD</li>
+                <li>SCART</li>
+                <li>SVIDEO</li>
+            </ul>
+            <h5>色温(Color Temp)</h5>
+            <div class="CT">
+                <div>
+                    <label class="my-col-3"></label>
+                    <label class="my-col-3">COOL</label>
+                    <label class="my-col-3">NORMAL</label>
+                    <label class="my-col-3">WARM</label>
+                </div>
+                <div>
+                    <label class="my-col-3">GAINR(0~2047)</label>
+                    <label class="my-col-3"><input type="text" name="cool_gainr_VGA"></label>
+                    <label class="my-col-3"><input type="text" name="normal_gainr_VGA"></label>
+                    <label class="my-col-3"><input type="text" name="warm_gainr_VGA"></label>
+                </div>
+                <div>
+                    <label class="my-col-3">GAING(0~2047)</label>
+                    <label class="my-col-3"><input type="text" name="cool_gaing_VGA"></label>
+                    <label class="my-col-3"><input type="text" name="normal_gaing_VGA"></label>
+                    <label class="my-col-3"><input type="text" name="warm_gaing_VGA"></label>
+                </div>
+                <div>
+                    <label class="my-col-3">GAINB(0~2047)</label>
+                    <label class="my-col-3"><input type="text" name="cool_gainb_VGA"></label>
+                    <label class="my-col-3"><input type="text" name="normal_gainb_VGA"></label>
+                    <label class="my-col-3"><input type="text" name="warm_gainb_VGA"></label>
+                </div>
+                <div>
+                    <label class="my-col-3">OFFSETR(0~2047)</label>
+                    <label class="my-col-3"><input type="text" name="cool_offsetr_VGA"></label>
+                    <label class="my-col-3"><input type="text" name="normal_offsetr_VGA"></label>
+                    <label class="my-col-3"><input type="text" name="warm_offsetr_VGA"></label>
+                </div>
+                <div>
+                    <label class="my-col-3">OFFSETG(0~2047)</label>
+                    <label class="my-col-3"><input type="text" name="cool_offsetg_VGA"></label>
+                    <label class="my-col-3"><input type="text" name="normal_offsetg_VGA"></label>
+                    <label class="my-col-3"><input type="text" name="warm_offsetg_VGA"></label>
+                </div>
+                <div>
+                    <label class="my-col-3">OFFSETB(0~2047)</label>
+                    <label class="my-col-3"><input type="text" name="cool_offsetb_VGA"></label>
+                    <label class="my-col-3"><input type="text" name="normal_offsetb_VGA"></label>
+                    <label class="my-col-3"><input type="text" name="warm_offsetb_VGA"></label>
+                </div>
+            </div>
+            <h5>图像曲线(Non Linear Curve)</h5>
+            <div class="NLC">
+                <div>
+                    <label class="pq-sm-2">(0~255)</label>
+                    <label class="pq-sm-2">OSD0</label>
+                    <label class="pq-sm-2">OSD25</label>
+                    <label class="pq-sm-2">OSD50</label>
+                    <label class="pq-sm-2">OSD75</label>
+                    <label class="pq-sm-2">OSD100</label>
+                </div>
+                <div>
+                    <label class="pq-sm-2">对比度(Contrast)</label>
+                    <label class="pq-sm-2"><input type="text" name="contrast_osd0_VGA"></label>
+                    <label class="pq-sm-2"><input type="text" name="contrast_osd25_VGA"></label>
+                    <label class="pq-sm-2"><input type="text" name="contrast_osd50_VGA"></label>
+                    <label class="pq-sm-2"><input type="text" name="contrast_osd75_VGA"></label>
+                    <label class="pq-sm-2"><input type="text" name="contrast_osd100_VGA"></label>
+                </div>
+                <div>
+                    <label class="pq-sm-2">亮度(Brightness)</label>
+                    <label class="pq-sm-2"><input type="text" name="brightness_osd0_VGA"></label>
+                    <label class="pq-sm-2"><input type="text" name="brightness_osd25_VGA"></label>
+                    <label class="pq-sm-2"><input type="text" name="brightness_osd50_VGA"></label>
+                    <label class="pq-sm-2"><input type="text" name="brightness_osd75_VGA"></label>
+                    <label class="pq-sm-2"><input type="text" name="brightness_osd100_VGA"></label>
+                </div>
+                <div>
+                    <label class="pq-sm-2">饱和度(Saturation)</label>
+                    <label class="pq-sm-2"><input type="text" name="saturation_osd0_VGA"></label>
+                    <label class="pq-sm-2"><input type="text" name="saturation_osd25_VGA"></label>
+                    <label class="pq-sm-2"><input type="text" name="saturation_osd50_VGA"></label>
+                    <label class="pq-sm-2"><input type="text" name="saturation_osd75_VGA"></label>
+                    <label class="pq-sm-2"><input type="text" name="saturation_osd100_VGA"></label>
+                </div>
+                <div>
+                    <label class="pq-sm-2">清晰度(Sharpness)</label>
+                    <label class="pq-sm-2"><input type="text" name="sharpness_osd0_VGA"></label>
+                    <label class="pq-sm-2"><input type="text" name="sharpness_osd25_VGA"></label>
+                    <label class="pq-sm-2"><input type="text" name="sharpness_osd50_VGA"></label>
+                    <label class="pq-sm-2"><input type="text" name="sharpness_osd75_VGA"></label>
+                    <label class="pq-sm-2"><input type="text" name="sharpness_osd100_VGA"></label>
+                </div>
+                <div>
+                    <label class="pq-sm-2">色调(Hue)</label>
+                    <label class="pq-sm-2"><input type="text" name="hue_osd0_VGA"></label>
+                    <label class="pq-sm-2"><input type="text" name="hue_osd25_VGA"></label>
+                    <label class="pq-sm-2"><input type="text" name="hue_osd50_VGA"></label>
+                    <label class="pq-sm-2"><input type="text" name="hue_osd75_VGA"></label>
+                    <label class="pq-sm-2"><input type="text" name="hue_osd100_VGA"></label>
+                </div>
+            </div>
+            <h5>QMAPREWRITE</h5>
+            <div class="QMAPREWRITE">
+                <div>
+                    <label class="my-col-3"></label>
+                    <label class="my-col-3">ICC</label>
+                    <label class="my-col-3">IBC</label>
+                    <label class="my-col-3">IHC</label>
+                </div>
+                <div>
+                    <label class="my-col-3">R <span class="color red"></span></label>
+                    <label class="my-col-3"><input type="text" name="icc_r"></label>
+                    <label class="my-col-3"><input type="text" name="ibc_r"></label>
+                    <label class="my-col-3"><input type="text" name="ihc_r"></label>
+                </div>
+                <div>
+                    <label class="my-col-3">G <span class="color green"></span></label>
+                    <label class="my-col-3"><input type="text" name="icc_g"></label>
+                    <label class="my-col-3"><input type="text" name="ibc_g"></label>
+                    <label class="my-col-3"><input type="text" name="ihc_g"></label>
+                </div>
+                <div>
+                    <label class="my-col-3">B <span class="color blue"></span></label>
+                    <label class="my-col-3"><input type="text" name="icc_b"></label>
+                    <label class="my-col-3"><input type="text" name="ibc_b"></label>
+                    <label class="my-col-3"><input type="text" name="ihc_b"></label>
+                </div>
+                <div>
+                    <label class="my-col-3">C <span class="color qing"></span></label>
+                    <label class="my-col-3"><input type="text" name="icc_c"></label>
+                    <label class="my-col-3"><input type="text" name="ibc_c"></label>
+                    <label class="my-col-3"><input type="text" name="ihc_c"></label>
+                </div>
+                <div>
+                    <label class="my-col-3">M <span class="color pink"></span></label>
+                    <label class="my-col-3"><input type="text" name="icc_m"></label>
+                    <label class="my-col-3"><input type="text" name="ibc_m"></label>
+                    <label class="my-col-3"><input type="text" name="ihc_m"></label>
+                </div>
+                <div>
+                    <label class="my-col-3">Y <span class="color yellow"></span></label>
+                    <label class="my-col-3"><input type="text" name="icc_y"></label>
+                    <label class="my-col-3"><input type="text" name="ibc_y"></label>
+                    <label class="my-col-3"><input type="text" name="ihc_y"></label>
+                </div>
+                <div>
+                    <label class="my-col-3">F <span class="color orange"></span></label>
+                    <label class="my-col-3"><input type="text" name="icc_f"></label>
+                    <label class="my-col-3"><input type="text" name="ibc_f"></label>
+                    <label class="my-col-3"><input type="text" name="ihc_f"></label>
+                </div>
+            </div>
+        </div>
+        <div class="text-center custom-btn">
+            <button class="btn btn-success"><pre class="Chinese">保存到配置</pre><pre class="English">Save to configuration</pre></button>
+        </div>
+    </div>
+</div>
+<div class="selectMenu">
+    <div class="select-header">
+        <h4></h4>
+    </div>
+    <div class="select-left"></div>
+    <div class="select-option"></div>
+    <div class="select-right"></div>
+    <div class="select-footer"></div>
+</div>
+<div class="modal fade" tabindex="-1" id="selectModal" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="select-header"><pre class="Chinese">选择需要的配置</pre><pre class="English">Select the configuration you need</pre></h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-xs-5">
+                        <div class="select-top">
+                            <h6><pre class="Chinese">需要的</pre><pre class="English">Need</pre></h6>
+                        </div>
+                        <ul class="select-left">
+                        </ul>
+                    </div>
+                    <div class="col-xs-1 btn-edit">
+                        <div class="button-go-left">
+                            <button class="btn btn-default btn-sm">></button>
+                            <button class="btn btn-default btn-sm"><</button>
+                        </div>
+                        <div class="button-go-right">
+                            <button class="btn btn-default btn-sm">>></button>
+                            <button class="btn btn-default btn-sm"><<</button>
+                        </div>
+                    </div>
+                    <div class="col-xs-5">
+                        <div class="select-top">
+                            <h6><pre class="Chinese">云库的</pre><pre class="English">All</pre></h6>
+                        </div>
+                        <ul class="select-right"></ul>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button type="button" class="btn btn-sm btn-success" id="select-true" data-dismiss="modal"><pre class="Chinese">确认</pre><pre class="English">Sure</pre></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
